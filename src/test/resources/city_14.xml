@@ -1,0 +1,9 @@
+<city uid="14" lat="50.9429" lng="6.95649" zoom="12" maps_icon="norisbike"
+	alias="koeln" break="0" name="Köln">
+	<place uid="35409" lat="50.9429485" lng="6.958015" name="Hauptbahnhof"
+		spot="1" number="4826" bikes="4" terminal_type="free"
+		bike_numbers="21640,21371,21336,21507" />
+	<place uid="346879" lat="50.928033" lng="6.928662"
+		name="Universität Köln (Hauptgebäude)" number="4823" bikes="1"
+		bike_numbers="21301" />
+</city>

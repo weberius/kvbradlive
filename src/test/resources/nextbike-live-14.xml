@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<markers>
+	<country lat="50.9364" lng="6.96053" zoom="11" name="KVB Rad Germany"
+		hotline="+493069205046" domain="kg" country="DE" country_name="Germany"
+		terms="http://www.kvb-rad.de/de/agb/" website="http://www.kvb-rad.de/">
+		<city uid="14" lat="50.9429" lng="6.95649" zoom="12" maps_icon="norisbike"
+			alias="koeln" break="0" name="Köln">
+			<place uid="35409" lat="50.9429485" lng="6.958015" name="Hauptbahnhof"
+				spot="1" number="4826" bikes="4" terminal_type="free"
+				bike_numbers="21640,21371,21336,21507" />
+			<place uid="346879" lat="50.928033" lng="6.928662"
+				name="Universität Köln (Hauptgebäude)" number="4823" bikes="1"
+				bike_numbers="21301" />
+			<place uid="348818" lat="50.957453" lng="7.011935" name="Bahnhof Mülheim"
+				number="4824" bikes="5+" terminal_type="free"
+				bike_numbers="21680,21742,21645,21137,21404" />
+			<place uid="348824" lat="50.93991308422203" lng="6.975363492965698"
+				name="Ottoplatz / Oplader Str. (Bahnhof Deutz)" number="4828" bikes="1"
+				terminal_type="free" bike_numbers="21668" />
+			<place uid="348826" lat="50.936453" lng="6.939949" name="Rudolfplatz"
+				number="4829" bikes="4" terminal_type="free" bike_numbers="21861,21593,21266,21601" />
+			<place uid="359446" lat="50.95309618860483" lng="6.903848340734839"
+				name="BIKE 21222" bikes="1" bike="1" bike_numbers="21222" />
+			<place uid="359793" lat="50.92854033817987" lng="6.942962408065796"
+				name="Barbarossaplatz / Neue Weyerstr." number="4847" bikes="1"
+				terminal_type="free" bike_numbers="21521" />
+			<place uid="361148" lat="50.96065364778042" lng="6.902763471007347"
+				name="BIKE 21513" bikes="1" bike="1" bike_numbers="21513" />
+			<place uid="361804" lat="50.95431244466454" lng="6.901748087257147"
+				name="BIKE 21676" bikes="1" bike="1" bike_numbers="21676" />
+			<place uid="367165" lat="50.951580153778" lng="6.9189968705177"
+				name="BIKE 21511" bikes="1" bike="1" bike_numbers="21511" />
+			<place uid="368383" lat="50.92514695" lng="6.89568105" name="BIKE 21366"
+				bikes="1" bike="1" bike_numbers="21366" />
+			<place uid="378571" lat="50.92525636777282" lng="6.895168460905552"
+				name="BIKE 21556" bikes="1" bike="1" bike_numbers="21556" />
+			<place uid="379349" lat="50.91127295" lng="6.98968015" name="BIKE 21753"
+				bikes="1" bike="1" bike_numbers="21753" />
+			<place uid="379760" lat="50.94769628" lng="6.9836753" name="BIKE 21134"
+				bikes="1" bike="1" bike_numbers="21134" />
+			<place uid="380000" lat="50.942763" lng="6.918323"
+				name="Weinsbergstr. / Mechternstr." bikes="1" terminal_type="unknown"
+				bike_numbers="21440" />
+			<place uid="383341" lat="50.97976753022522" lng="6.8976206704974174"
+				name="BIKE 21909" bikes="1" bike="1" bike_numbers="21909" />
+			<place uid="395329" lat="50.93295878" lng="6.872566683" name="BIKE 21575"
+				bikes="1" bike="1" bike_numbers="21575" />
+			<place uid="401957" lat="50.97013307" lng="7.008391983" name="BIKE 21019"
+				bikes="1" bike="1" bike_numbers="21019" />
+			<place uid="404574" lat="50.95341225" lng="6.905172067" name="BIKE 21008"
+				bikes="1" bike="1" bike_numbers="21008" />
+			<place uid="430479" lat="50.93883137313776" lng="6.906269788742065"
+				name="KVB Hauptverwaltung" spot="1" number="4821" bikes="1"
+				terminal_type="character" bike_numbers="21833" />
+			<place uid="436371" lat="50.931529" lng="6.950085" name="Hst. Poststr."
+				bikes="1" terminal_type="unknown" bike_numbers="21533" />
+			<place uid="444757" lat="50.932076870469345" lng="6.9202762842178345"
+				name="Dürener Str. / Classen-Kappelmann-Str." bikes="1"
+				terminal_type="unknown" bike_numbers="21902" />
+			<place uid="448626" lat="50.950465207624845" lng="6.957714557647705"
+				name="Ebertplatz" number="4827" bikes="5+" terminal_type="free"
+				bike_numbers="21160,21635,21930,21372,21768" />
+			<place uid="450636" lat="50.90461604272029" lng="6.945462226867676"
+				name="Zollstockgürtel / Vorgebirgstr." bikes="2" bike_numbers="21552,21663" />
+			<place uid="453247" lat="50.913874" lng="6.971806"
+				name="Schönhauser Str. / Gustav-Heinmann Ufer" bikes="1"
+				terminal_type="unknown" bike_numbers="21462" />
+			<place uid="454238" lat="50.914693" lng="6.922918"
+				name="Manderscheider Str. / Dauner Str. " bikes="1" terminal_type="unknown"
+				bike_numbers="21579" />
+			<place uid="455908" lat="50.9723156" lng="6.976376"
+				name="Amsterdamer Str. / Boltensternstr." bikes="1" terminal_type="unknown"
+				bike_numbers="21464" />
+			<place uid="463295" lat="51.002205" lng="7.041935"
+				name="Berliner Str. (vor dem Netto)" bikes="1" terminal_type="unknown"
+				bike_numbers="21482" />
+			<place uid="464773" lat="50.903573" lng="6.9509261" name="BIKE 21672"
+				bikes="1" bike="1" bike_numbers="21672" />
+			<place uid="466266" lat="50.9276206604912" lng="6.93461537361145"
+				name="Zülpicher Str. / Zülpicher Wall" bikes="1" terminal_type="unknown"
+				bike_numbers="21623" />
+			<place uid="466877" lat="50.90669297" lng="7.014981633" name="BIKE 21279"
+				bikes="1" bike="1" bike_numbers="21279" />
+			<place uid="469554" lat="50.909152" lng="6.953946"
+				name="Mannsfelder Str. / Kreuznacher Str." bikes="1" terminal_type="unknown"
+				bike_numbers="21729" />
+			<place uid="469970" lat="50.9264727" lng="6.95808199999999"
+				name="Josephstr. / Severinstr" bikes="1" terminal_type="unknown"
+				bike_numbers="21163" />
+			<place uid="470108" lat="50.903821" lng="6.964562"
+				name="Bonner Str. / Bayenthalgürtel" spot="1" bikes="0"
+				terminal_type="unknown" />
+			<place uid="471546" lat="50.92097612525033" lng="6.932678818702698"
+				name="Luxemburger Str. / Universitätsstr. " bikes="1" terminal_type="unknown"
+				bike_numbers="21334" />
+			<place uid="472209" lat="50.96584" lng="6.999094"
+				name="Rheinpromenade / Salzstr. " bikes="1" terminal_type="unknown"
+				bike_numbers="21388" />
+			<place uid="473437" lat="50.935703068972" lng="6.9345292914659"
+				name="BIKE 21935" bikes="1" bike="1" bike_numbers="21935" />
+			<place uid="481403" lat="50.9586309" lng="7.0054599" name="BIKE 21192"
+				bikes="1" bike="1" bike_numbers="21192" />
+			<place uid="484878" lat="50.9223474" lng="6.912319717" name="BIKE 21748"
+				bikes="1" bike="1" bike_numbers="21748" />
+			<place uid="485084" lat="50.93609975" lng="6.985500683" name="BIKE 21872"
+				bikes="1" bike="1" bike_numbers="21872" />
+			<place uid="485989" lat="50.948969" lng="6.918591"
+				name="Venloer Str. / Keplerstr." bikes="1" terminal_type="unknown"
+				bike_numbers="21389" />
+			<place uid="486442" lat="50.9289663591821" lng="6.94211483001709"
+				name="Hst. Barbarossaplatz" bikes="1" terminal_type="unknown"
+				bike_numbers="21850" />
+			<place uid="492719" lat="50.98031394649297" lng="6.960569936782122"
+				name="BIKE 21414" bikes="1" bike="1" bike_numbers="21414" />
+			<place uid="492896" lat="50.935744" lng="6.960015" name="Hst. Heumarkt "
+				bikes="1" terminal_type="unknown" bike_numbers="21147" />
+			<place uid="493584" lat="50.979620763100684" lng="6.923545142635703"
+				name="BIKE 21184" bikes="1" bike="1" bike_numbers="21184" />
+			<place uid="494405" lat="50.9951634099707" lng="6.919847968965769"
+				name="BIKE 21713" bikes="1" bike="1" bike_numbers="21713" />
+			<place uid="494467" lat="50.98833402" lng="6.942536283" name="BIKE 21943"
+				bikes="1" bike="1" bike_numbers="21943" />
+			<place uid="494709" lat="50.904778420353864" lng="6.971426010131836"
+				name="Bayenthalgürtel / Golfstein Str. " bikes="1" terminal_type="unknown"
+				bike_numbers="21491" />
+			<place uid="495070" lat="50.9596583" lng="6.896113817" name="BIKE 21803"
+				bikes="1" bike="1" bike_numbers="21803" />
+			<place uid="495164" lat="50.97180045" lng="6.964997367" name="BIKE 21892"
+				bikes="1" bike="1" bike_numbers="21892" />
+			<place uid="495473" lat="50.929056219757" lng="6.922367233783"
+				name="BIKE 21804" bikes="1" bike="1" bike_numbers="21804" />
+			<place uid="495708" lat="50.9429" lng="6.95649" name="Hst. Beuthener Str. "
+				bikes="1" terminal_type="unknown" bike_numbers="21927" />
+			<place uid="495956" lat="50.96207582" lng="6.95406005" name="BIKE 21311"
+				bikes="1" bike="1" bike_numbers="21311" />
+			<place uid="497540" lat="50.97625395" lng="6.966683983" name="BIKE 21869"
+				bikes="1" bike="1" bike_numbers="21869" />
+			<place uid="497649" lat="50.97508736886084" lng="6.973284864798188"
+				name="BIKE 21095" bikes="1" bike="1" bike_numbers="21095" />
+			<place uid="497789" lat="50.928083" lng="6.924406"
+				name="Weyertal / Gyrhofstr. " bikes="1" terminal_type="unknown"
+				bike_numbers="21249" />
+			<place uid="497799" lat="50.9368168" lng="6.872936367" name="BIKE 21915"
+				bikes="1" bike="1" bike_numbers="21915" />
+			<place uid="498055" lat="50.9094649" lng="6.922067333" name="BIKE 21721"
+				bikes="1" bike="1" bike_numbers="21721" />
+			<place uid="498098" lat="50.93227782" lng="6.873775067" name="BIKE 21025"
+				bikes="1" bike="1" bike_numbers="21025" />
+			<place uid="498309" lat="50.90904825" lng="6.972296483" name="BIKE 21474"
+				bikes="1" bike="1" bike_numbers="21474" />
+			<place uid="498359" lat="50.93184512" lng="6.8771954" name="BIKE 21712"
+				bikes="1" bike="1" bike_numbers="21712" />
+			<place uid="498635" lat="50.956550957635045" lng="7.012660866603255"
+				name="BIKE 21541" bikes="1" bike="1" bike_numbers="21541" />
+			<place uid="499124" lat="50.93981425" lng="7.048798583" name="BIKE 21920"
+				bikes="1" bike="1" bike_numbers="21920" />
+			<place uid="499170" lat="50.937922" lng="6.998039" name="Köln Arcaden"
+				bikes="1" terminal_type="unknown" bike_numbers="21353" />
+			<place uid="499183" lat="50.944598992355" lng="7.0098592154682"
+				name="BIKE 21687" bikes="1" bike="1" bike_numbers="21687" />
+			<place uid="499365" lat="50.937163" lng="6.896721"
+				name="Aachener Str. / Hermann-Pflaume-Str." bikes="1" terminal_type="unknown"
+				bike_numbers="21501" />
+			<place uid="499492" lat="50.94740603" lng="6.96046885" name="BIKE 21886"
+				bikes="1" bike="1" bike_numbers="21886" />
+			<place uid="499719" lat="50.977211" lng="7.002221"
+				name="Am Faulbach / Düsseldorfer Str." bikes="1" terminal_type="unknown"
+				bike_numbers="21230" />
+			<place uid="499955" lat="50.956379" lng="6.90456" name="Venloer Str. 538"
+				bikes="1" terminal_type="unknown" bike_numbers="21928" />
+			<place uid="499966" lat="50.96204075" lng="7.011067283" name="BIKE 21539"
+				bikes="1" bike="1" bike_numbers="21539" />
+			<place uid="500018" lat="50.92776222" lng="6.92764795" name="BIKE 21370"
+				bikes="1" bike="1" bike_numbers="21370" />
+			<place uid="500059" lat="50.92395915" lng="6.899938117" name="BIKE 21068"
+				bikes="1" bike="1" bike_numbers="21068" />
+			<place uid="500119" lat="50.948704" lng="6.95157" name="Hansaring"
+				bikes="1" terminal_type="unknown" bike_numbers="21197" />
+			<place uid="500191" lat="50.90857722" lng="6.960862" name="BIKE 21114"
+				bikes="1" bike="1" bike_numbers="21114" />
+			<place uid="500263" lat="50.926536" lng="6.942856" name="Pfälzer Straße 40"
+				bikes="1" terminal_type="unknown" bike_numbers="21509" />
+			<place uid="500724" lat="50.97847483" lng="6.948750283" name="BIKE 21563"
+				bikes="1" bike="1" bike_numbers="21563" />
+			<place uid="500991" lat="50.96135538" lng="6.999157117" name="BIKE 21177"
+				bikes="1" bike="1" bike_numbers="21177" />
+			<place uid="501036" lat="50.9625312" lng="6.9946684" name="BIKE 21207"
+				bikes="1" bike="1" bike_numbers="21207" />
+			<place uid="501193" lat="50.93928775" lng="7.04610995" name="BIKE 21210"
+				bikes="1" bike="1" bike_numbers="21210" />
+			<place uid="501253" lat="50.97639595" lng="6.96685515" name="BIKE 21705"
+				bikes="1" bike="1" bike_numbers="21705" />
+			<place uid="501535" lat="50.9768315" lng="6.961001217" name="BIKE 21345"
+				bikes="1" bike="1" bike_numbers="21345" />
+			<place uid="501645" lat="50.916614" lng="6.935837" name="Rhöndorfer Str."
+				bikes="2" terminal_type="unknown" bike_numbers="21405,21423" />
+			<place uid="501723" lat="50.93223722" lng="6.989054267" name="BIKE 21589"
+				bikes="1" bike="1" bike_numbers="21589" />
+			<place uid="501804" lat="50.93543058000606" lng="6.961126327514648"
+				name="Maritim Hotel Köln" number="4834" bikes="2" terminal_type="free"
+				bike_numbers="21308,21815" />
+			<place uid="502009" lat="50.91116258" lng="6.988782217" name="BIKE 21696"
+				bikes="1" bike="1" bike_numbers="21696" />
+			<place uid="502132" lat="50.93922487" lng="6.95979925" name="BIKE 21737"
+				bikes="1" bike="1" bike_numbers="21737" />
+			<place uid="502178" lat="50.93708057" lng="6.867614683" name="BIKE 21630"
+				bikes="1" bike="1" bike_numbers="21630" />
+			<place uid="502458" lat="50.97955115" lng="6.896909233" name="BIKE 21094"
+				bikes="1" bike="1" bike_numbers="21094" />
+			<place uid="502575" lat="50.951932235620916" lng="7.005225531756878"
+				name="BIKE 21344" bikes="1" bike="1" bike_numbers="21344" />
+			<place uid="502667" lat="50.94021365" lng="7.022229433" name="BIKE 21022"
+				bikes="1" bike="1" bike_numbers="21022" />
+			<place uid="502976" lat="50.9375743" lng="6.9806628" name="BIKE 21339"
+				bikes="1" bike="1" bike_numbers="21339" />
+			<place uid="503486" lat="50.928479" lng="6.936325"
+				name="Moselstraße / Zülpicher Straße" bikes="1" terminal_type="unknown"
+				bike_numbers="21444" />
+			<place uid="503511" lat="50.95063565" lng="6.988356017"
+				name="Adam-Stegenwald-Str. / Deutz-Mühlheimer-Str." bikes="1"
+				terminal_type="unknown" bike_numbers="21911" />
+			<place uid="503543" lat="50.97262593" lng="6.890847217" name="BIKE 21611"
+				bikes="1" bike="1" bike_numbers="21611" />
+			<place uid="503572" lat="50.946259" lng="6.925412"
+				name="Venloer Straße / Franz-Geuer-Straße" bikes="1" terminal_type="unknown"
+				bike_numbers="21181" />
+			<place uid="503727" lat="50.92848745" lng="6.94781205" name="BIKE 21441"
+				bikes="1" bike="1" bike_numbers="21441" />
+			<place uid="503777" lat="50.97727305" lng="6.96400985" name="BIKE 21443"
+				bikes="1" bike="1" bike_numbers="21443" />
+			<place uid="503787" lat="50.91997695" lng="6.959037517" name="BIKE 21527"
+				bikes="1" bike="1" bike_numbers="21527" />
+			<place uid="503841" lat="50.920173246413" lng="6.9081152323633"
+				name="BIKE 21185" bikes="1" bike="1" bike_numbers="21185" />
+			<place uid="503885" lat="50.9398613" lng="7.0136114" name="BIKE 21534"
+				bikes="1" bike="1" bike_numbers="21534" />
+			<place uid="503924" lat="50.9176538977772" lng="6.963378209620714"
+				name="BIKE 21523" bikes="1" bike="1" bike_numbers="21523" />
+			<place uid="503947" lat="50.9429" lng="6.95649"
+				name="August-von-Willich Str./ Franz-Raveaux Str. " bikes="1"
+				terminal_type="unknown" bike_numbers="21782" />
+			<place uid="504069" lat="50.953767" lng="6.913221"
+				name="Lessingstr. / Marienstr. " bikes="1" terminal_type="unknown"
+				bike_numbers="21561" />
+			<place uid="504149" lat="50.97479701973498" lng="6.972036380320787"
+				name="BIKE 21591" bikes="1" bike="1" bike_numbers="21591" />
+			<place uid="504219" lat="50.9055535" lng="6.9375796" name="BIKE 21524"
+				bikes="1" bike="1" bike_numbers="21524" />
+			<place uid="504238" lat="50.952355" lng="6.968634"
+				name="Konrad-Adenauer-Ufer / Mevissenstr. " bikes="1" terminal_type="unknown"
+				bike_numbers="21746" />
+			<place uid="504335" lat="50.98712335" lng="6.892021833" name="BIKE 21605"
+				bikes="1" bike="1" bike_numbers="21605" />
+			<place uid="504838" lat="50.97745415" lng="6.897427917" name="BIKE 21198"
+				bikes="1" bike="1" bike_numbers="21198" />
+			<place uid="505003" lat="50.90821757" lng="6.947340067" name="BIKE 21176"
+				bikes="1" bike="1" bike_numbers="21176" />
+			<place uid="505041" lat="50.92850885" lng="6.974516717" name="BIKE 21158"
+				bikes="1" bike="1" bike_numbers="21158" />
+			<place uid="505073" lat="50.98273888" lng="6.960421033" name="BIKE 21644"
+				bikes="1" bike="1" bike_numbers="21644" />
+			<place uid="505333" lat="50.96689288504422" lng="6.883573103696108"
+				name="BIKE 21140" bikes="1" bike="1" bike_numbers="21140" />
+			<place uid="505471" lat="50.95165211241692" lng="6.906595174223185"
+				name="BIKE 21518" bikes="1" bike="1" bike_numbers="21518" />
+			<place uid="505493" lat="50.92846932" lng="6.9965783" name="BIKE 21172"
+				bikes="1" bike="1" bike_numbers="21172" />
+			<place uid="505639" lat="50.93999903" lng="6.9011393" name="BIKE 21771"
+				bikes="1" bike="1" bike_numbers="21771" />
+			<place uid="505656" lat="50.91221818" lng="6.96400745" name="BIKE 21890"
+				bikes="1" bike="1" bike_numbers="21890" />
+			<place uid="505862" lat="50.93611233" lng="6.894656517" name="BIKE 21904"
+				bikes="1" bike="1" bike_numbers="21904" />
+			<place uid="505918" lat="50.9309003" lng="6.85207555" name="BIKE 21766"
+				bikes="1" bike="1" bike_numbers="21766" />
+			<place uid="506080" lat="50.93650403" lng="6.9337374" name="BIKE 21476"
+				bikes="1" bike="1" bike_numbers="21476" />
+			<place uid="506087" lat="50.919664003886" lng="6.9099285732955"
+				name="BIKE 21677" bikes="1" bike="1" bike_numbers="21677" />
+			<place uid="506108" lat="50.9612002" lng="6.998011717" name="BIKE 21555"
+				bikes="1" bike="1" bike_numbers="21555" />
+			<place uid="506148" lat="50.9367557695289" lng="6.940408945083618"
+				name="Rudolfsplatz / Mittelstr." bikes="1" terminal_type="unknown"
+				bike_numbers="21286" />
+			<place uid="506238" lat="50.9429" lng="6.95649"
+				name="Rhöndorfer Straße / Stenzelbergstr." bikes="1" terminal_type="unknown"
+				bike_numbers="21179" />
+			<place uid="506242" lat="50.91341415" lng="6.960823433" name="BIKE 21900"
+				bikes="1" bike="1" bike_numbers="21900" />
+			<place uid="506402" lat="50.9086888" lng="6.9397715" name="BIKE 21335"
+				bikes="1" bike="1" bike_numbers="21335" />
+			<place uid="506403" lat="50.93468385" lng="6.878952983" name="BIKE 21577"
+				bikes="1" bike="1" bike_numbers="21577" />
+			<place uid="506452" lat="50.921717" lng="6.966496"
+				name="Ubierring / Trajanstr." bikes="1" terminal_type="unknown"
+				bike_numbers="21074" />
+			<place uid="506456" lat="50.96696378" lng="6.882938733" name="BIKE 21506"
+				bikes="1" bike="1" bike_numbers="21506" />
+			<place uid="506502" lat="50.92865712" lng="6.974263433" name="BIKE 21767"
+				bikes="1" bike="1" bike_numbers="21767" />
+			<place uid="506538" lat="50.9625312" lng="6.9946684" name="BIKE 21445"
+				bikes="1" bike="1" bike_numbers="21445" />
+			<place uid="506586" lat="50.128799" lng="8.691304" name="Nibelungenplatz"
+				bikes="1" terminal_type="unknown" bike_numbers="21522" />
+			<place uid="506653" lat="50.9015639" lng="6.956149667" name="BIKE 21598"
+				bikes="1" bike="1" bike_numbers="21598" />
+			<place uid="506740" lat="50.919914580882" lng="6.9100533798337"
+				name="BIKE 21213" bikes="1" bike="1" bike_numbers="21213" />
+			<place uid="506764" lat="50.91797745" lng="6.964927467" name="BIKE 21853"
+				bikes="1" bike="1" bike_numbers="21853" />
+			<place uid="506832" lat="50.9630408" lng="6.9519516" name="BIKE 21317"
+				bikes="1" bike="1" bike_numbers="21317" />
+			<place uid="506841" lat="50.94243566505611" lng="6.9189919251948595"
+				name="BIKE 21606" bikes="1" bike="1" bike_numbers="21606" />
+			<place uid="506852" lat="50.94184522" lng="6.896542733" name="BIKE 21566"
+				bikes="1" bike="1" bike_numbers="21566" />
+			<place uid="506907" lat="50.96504332" lng="6.99893625" name="BIKE 21543"
+				bikes="1" bike="1" bike_numbers="21543" />
+			<place uid="506912" lat="50.9283978" lng="6.97480445" name="BIKE 21970"
+				bikes="1" bike="1" bike_numbers="21970" />
+			<place uid="506919" lat="50.92554015" lng="6.8962445" name="BIKE 21714"
+				bikes="1" bike="1" bike_numbers="21714" />
+			<place uid="506951" lat="50.95995202" lng="6.936416517" name="BIKE 21715"
+				bikes="1" bike="1" bike_numbers="21715" />
+			<place uid="506958" lat="50.94207143" lng="6.976583533" name="BIKE 21307"
+				bikes="1" bike="1" bike_numbers="21307" />
+			<place uid="506977" lat="50.969216264784336" lng="6.916887396946549"
+				name="BIKE 21045" bikes="1" bike="1" bike_numbers="21045" />
+			<place uid="507018" lat="50.91898078" lng="6.964467767" name="BIKE 21726"
+				bikes="1" bike="1" bike_numbers="21726" />
+			<place uid="507062" lat="50.91213962" lng="6.980624" name="BIKE 21097"
+				bikes="1" bike="1" bike_numbers="21097" />
+			<place uid="507075" lat="50.91801767" lng="6.929789233" name="BIKE 21665"
+				bikes="1" bike="1" bike_numbers="21665" />
+			<place uid="507156" lat="50.918205" lng="6.916857"
+				name="Euskirchener Str. / Sülzgürtel" bikes="1" terminal_type="unknown"
+				bike_numbers="21033" />
+			<place uid="507201" lat="50.950292" lng="6.982919533" name="BIKE 21923"
+				bikes="1" bike="1" bike_numbers="21923" />
+			<place uid="507239" lat="50.97729063592851" lng="6.897228648886085"
+				name="BIKE 21026" bikes="1" bike="1" bike_numbers="21026" />
+			<place uid="507306" lat="50.97865905" lng="6.948920867" name="BIKE 21675"
+				bikes="1" bike="1" bike_numbers="21675" />
+			<place uid="507311" lat="50.945997" lng="6.91947"
+				name="Vogelsanger Str. / Geisselstr." bikes="1" terminal_type="unknown"
+				bike_numbers="21773" />
+			<place uid="507316" lat="50.97842555" lng="6.948886733" name="BIKE 21104"
+				bikes="1" bike="1" bike_numbers="21104" />
+			<place uid="507377" lat="50.94787368" lng="6.96524635" name="BIKE 21194"
+				bikes="1" bike="1" bike_numbers="21194" />
+			<place uid="507431" lat="50.91040023" lng="6.95886185" name="BIKE 21595"
+				bikes="1" bike="1" bike_numbers="21595" />
+			<place uid="507450" lat="50.9558333" lng="7.006762983" name="BIKE 21354"
+				bikes="1" bike="1" bike_numbers="21354" />
+			<place uid="507467" lat="50.90634545" lng="6.960222833" name="BIKE 21704"
+				bikes="1" bike="1" bike_numbers="21704" />
+			<place uid="507571" lat="50.960446" lng="7.000588" name="Andreaestr."
+				bikes="1" terminal_type="unknown" bike_numbers="21081" />
+			<place uid="507661" lat="50.90889" lng="6.969921" name="Goltsteinstr."
+				bikes="1" terminal_type="unknown" bike_numbers="21410" />
+			<place uid="507665" lat="50.91554248" lng="7.00083065" name="BIKE 21267"
+				bikes="1" bike="1" bike_numbers="21267" />
+			<place uid="507685" lat="50.95379037" lng="6.874528033" name="BIKE 21594"
+				bikes="1" bike="1" bike_numbers="21594" />
+			<place uid="507696" lat="50.937469" lng="6.934662"
+				name="Lütticher Str. / Brüsseler Str." bikes="1" terminal_type="unknown"
+				bike_numbers="21838" />
+			<place uid="507719" lat="50.94130283" lng="6.9612998" name="BIKE 21542"
+				bikes="1" bike="1" bike_numbers="21542" />
+			<place uid="507739" lat="50.93878508" lng="6.9618454" name="BIKE 21785"
+				bikes="1" bike="1" bike_numbers="21785" />
+			<place uid="507756" lat="50.9451027" lng="7.0073373" name="BIKE 21703"
+				bikes="1" bike="1" bike_numbers="21703" />
+			<place uid="507833" lat="50.96692658" lng="6.95793495" name="BIKE 21126"
+				bikes="1" bike="1" bike_numbers="21126" />
+			<place uid="507847" lat="50.93948168" lng="6.974337467" name="BIKE 21087"
+				bikes="1" bike="1" bike_numbers="21087" />
+			<place uid="507907" lat="50.95602137" lng="6.930352617" name="BIKE 21229"
+				bikes="1" bike="1" bike_numbers="21229" />
+			<place uid="507978" lat="50.95881335" lng="7.02575725" name="BIKE 21393"
+				bikes="1" bike="1" bike_numbers="21393" />
+			<place uid="507997" lat="50.90542198" lng="6.950126633" name="BIKE 21038"
+				bikes="1" bike="1" bike_numbers="21038" />
+			<place uid="508005" lat="50.9579318" lng="6.9775015" name="BIKE 21903"
+				bikes="1" bike="1" bike_numbers="21903" />
+			<place uid="508006" lat="50.91412" lng="6.915681"
+				name="Münstereifeler Str. / Neuenhöfer Allee" bikes="1"
+				terminal_type="unknown" bike_numbers="21130" />
+			<place uid="508086" lat="50.91146843" lng="6.969802817" name="BIKE 21245"
+				bikes="1" bike="1" bike_numbers="21245" />
+			<place uid="508091" lat="50.96777983" lng="6.951712967" name="BIKE 21100"
+				bikes="1" bike="1" bike_numbers="21100" />
+			<place uid="508093" lat="50.90994343" lng="6.974774783" name="BIKE 21689"
+				bikes="1" bike="1" bike_numbers="21689" />
+			<place uid="508158" lat="50.96323248" lng="6.984736583" name="BIKE 21369"
+				bikes="1" bike="1" bike_numbers="21369" />
+			<place uid="508191" lat="50.950258" lng="6.980708" name="Claudius Therme"
+				bikes="2" terminal_type="unknown" bike_numbers="21551,21273" />
+			<place uid="508229" lat="50.95364497" lng="6.94066565" name="BIKE 21296"
+				bikes="1" bike="1" bike_numbers="21296" />
+			<place uid="508249" lat="50.96211733" lng="6.9562258" name="BIKE 21615"
+				bikes="1" bike="1" bike_numbers="21615" />
+			<place uid="508298" lat="50.91762172" lng="6.894705917" name="BIKE 21492"
+				bikes="1" bike="1" bike_numbers="21492" />
+			<place uid="508331" lat="50.934276" lng="6.958878767" name="BIKE 21350"
+				bikes="1" bike="1" bike_numbers="21350" />
+			<place uid="508333" lat="50.920028" lng="50.920028" name="Konradstr. 4"
+				bikes="1" terminal_type="unknown" bike_numbers="21758" />
+			<place uid="508342" lat="50.9598748" lng="7.008028267" name="BIKE 21202"
+				bikes="1" bike="1" bike_numbers="21202" />
+			<place uid="508416" lat="50.96110602" lng="6.958664367" name="BIKE 21463"
+				bikes="1" bike="1" bike_numbers="21463" />
+			<place uid="508501" lat="50.915421084501" lng="6.9042554497719"
+				name="BIKE 21725" bikes="1" bike="1" bike_numbers="21725" />
+			<place uid="508519" lat="50.9620634" lng="6.974405717" name="BIKE 21896"
+				bikes="1" bike="1" bike_numbers="21896" />
+			<place uid="508546" lat="50.97166788" lng="6.959675233" name="BIKE 21802"
+				bikes="1" bike="1" bike_numbers="21802" />
+			<place uid="508627" lat="50.92246568" lng="6.9824115" name="BIKE 21525"
+				bikes="1" bike="1" bike_numbers="21525" />
+			<place uid="508691" lat="50.96753551115629" lng="7.002990245819092"
+				name="Düsseldorfer Str. / Mühlheimer Freiheit" bikes="1"
+				terminal_type="unknown" bike_numbers="21396" />
+			<place uid="508717" lat="50.96463768" lng="6.9764437" name="BIKE 21438"
+				bikes="1" bike="1" bike_numbers="21438" />
+			<place uid="508720" lat="50.96333297" lng="7.014373133" name="BIKE 21458"
+				bikes="1" bike="1" bike_numbers="21458" />
+			<place uid="508751" lat="50.93766548" lng="6.888533483" name="BIKE 21471"
+				bikes="1" bike="1" bike_numbers="21471" />
+			<place uid="508753" lat="50.932941148058" lng="6.9768667034805"
+				name="BIKE 21621" bikes="1" bike="1" bike_numbers="21621" />
+			<place uid="508786" lat="50.9309369" lng="6.971840167" name="BIKE 21449"
+				bikes="1" bike="1" bike_numbers="21449" />
+			<place uid="508789" lat="50.97945428" lng="6.92349535" name="BIKE 21770"
+				bikes="1" bike="1" bike_numbers="21770" />
+			<place uid="508863" lat="50.91783018" lng="6.9519538" name="BIKE 21284"
+				bikes="1" bike="1" bike_numbers="21284" />
+			<place uid="508875" lat="50.95533305" lng="6.961566683" name="BIKE 21042"
+				bikes="1" bike="1" bike_numbers="21042" />
+			<place uid="508889" lat="50.92855223" lng="6.974583783" name="BIKE 21219"
+				bikes="1" bike="1" bike_numbers="21219" />
+			<place uid="508943" lat="50.930951" lng="6.971645"
+				name="Hst. Severinsbrücke Deutz" bikes="1" terminal_type="unknown"
+				bike_numbers="21880" />
+			<place uid="508947" lat="50.94996552" lng="6.966691917" name="BIKE 21117"
+				bikes="1" bike="1" bike_numbers="21117" />
+			<place uid="508955" lat="50.947668" lng="6.94421" name="Im Mediapark"
+				bikes="1" terminal_type="unknown" bike_numbers="21738" />
+			<place uid="508957" lat="50.97705425" lng="6.960295417" name="BIKE 21395"
+				bikes="1" bike="1" bike_numbers="21395" />
+			<place uid="508970" lat="50.9355237" lng="6.951731767" name="BIKE 21497"
+				bikes="1" bike="1" bike_numbers="21497" />
+			<place uid="508974" lat="50.91538887" lng="6.904250583" name="BIKE 21637"
+				bikes="1" bike="1" bike_numbers="21637" />
+			<place uid="509030" lat="50.943121" lng="6.947788" name="Gereonstr."
+				bikes="1" terminal_type="unknown" bike_numbers="21489" />
+			<place uid="509041" lat="50.95954732" lng="6.97695565" name="BIKE 21706"
+				bikes="1" bike="1" bike_numbers="21706" />
+			<place uid="509045" lat="50.93515353" lng="6.95176395" name="BIKE 21403"
+				bikes="1" bike="1" bike_numbers="21403" />
+			<place uid="509052" lat="50.9540242" lng="6.877444633" name="BIKE 21448"
+				bikes="1" bike="1" bike_numbers="21448" />
+			<place uid="509069" lat="50.90875128" lng="6.939092283" name="BIKE 21162"
+				bikes="1" bike="1" bike_numbers="21162" />
+			<place uid="509099" lat="50.97976120188832" lng="6.8975708819925785"
+				name="BIKE 21293" bikes="1" bike="1" bike_numbers="21293" />
+			<place uid="509105" lat="50.96616093535" lng="7.0088217873126"
+				name="BIKE 21893" bikes="1" bike="1" bike_numbers="21893" />
+			<place uid="509115" lat="50.96979603" lng="6.955308983" name="BIKE 21608"
+				bikes="1" bike="1" bike_numbers="21608" />
+			<place uid="509137" lat="50.91984567" lng="6.910099783" name="BIKE 21101"
+				bikes="1" bike="1" bike_numbers="21101" />
+			<place uid="509169" lat="50.9561097" lng="6.922280833" name="BIKE 21899"
+				bikes="1" bike="1" bike_numbers="21899" />
+			<place uid="509222" lat="50.97403405" lng="6.95120315" name="BIKE 21532"
+				bikes="1" bike="1" bike_numbers="21532" />
+			<place uid="509254" lat="50.95194277" lng="6.959991233" name="BIKE 21795"
+				bikes="1" bike="1" bike_numbers="21795" />
+			<place uid="509309" lat="50.95361655" lng="6.905536783" name="BIKE 21367"
+				bikes="1" bike="1" bike_numbers="21367" />
+			<place uid="509324" lat="50.940638" lng="7.010776" name="Thumbstr. / Eythstr."
+				bikes="1" terminal_type="unknown" bike_numbers="21089" />
+			<place uid="509330" lat="50.96611848101" lng="7.0116907451302"
+				name="BIKE 21490" bikes="1" bike="1" bike_numbers="21490" />
+			<place uid="509359" lat="50.92155887" lng="6.983649233" name="BIKE 21111"
+				bikes="1" bike="1" bike_numbers="21111" />
+			<place uid="509364" lat="50.92249272" lng="6.95632585" name="BIKE 21946"
+				bikes="1" bike="1" bike_numbers="21946" />
+			<place uid="509373" lat="50.96479866653681" lng="6.899150284007192"
+				name="BIKE 21881" bikes="1" bike="1" bike_numbers="21881" />
+			<place uid="509391" lat="50.9452062" lng="6.9708486" name="BIKE 21619"
+				bikes="1" bike="1" bike_numbers="21619" />
+			<place uid="509398" lat="50.90428642" lng="6.92107015" name="BIKE 21588"
+				bikes="1" bike="1" bike_numbers="21588" />
+			<place uid="509402" lat="50.95210518" lng="6.960478317" name="BIKE 21841"
+				bikes="1" bike="1" bike_numbers="21841" />
+			<place uid="509421" lat="50.93940055" lng="6.941791083" name="BIKE 21479"
+				bikes="1" bike="1" bike_numbers="21479" />
+			<place uid="509430" lat="50.91333915" lng="6.964750383" name="BIKE 21537"
+				bikes="1" bike="1" bike_numbers="21537" />
+			<place uid="509465" lat="50.97581532" lng="6.947163133" name="BIKE 21657"
+				bikes="1" bike="1" bike_numbers="21657" />
+			<place uid="509473" lat="50.91717358" lng="6.906549683" name="BIKE 21364"
+				bikes="1" bike="1" bike_numbers="21364" />
+			<place uid="509479" lat="50.90331422" lng="6.946158117" name="BIKE 21960"
+				bikes="1" bike="1" bike_numbers="21960" />
+			<place uid="509511" lat="50.97755985" lng="6.966826817" name="BIKE 21099"
+				bikes="1" bike="1" bike_numbers="21099" />
+			<place uid="509517" lat="50.92030535" lng="6.953287133" name="BIKE 21316"
+				bikes="1" bike="1" bike_numbers="21316" />
+			<place uid="509563" lat="50.91969635" lng="6.95415325" name="BIKE 21003"
+				bikes="1" bike="1" bike_numbers="21003" />
+			<place uid="509565" lat="50.91691902" lng="6.906780817" name="BIKE 21357"
+				bikes="1" bike="1" bike_numbers="21357" />
+			<place uid="509572" lat="50.9759979" lng="6.965089367" name="BIKE 21351"
+				bikes="1" bike="1" bike_numbers="21351" />
+			<place uid="509573" lat="50.96788143" lng="6.929833167" name="BIKE 21425"
+				bikes="1" bike="1" bike_numbers="21425" />
+			<place uid="509594" lat="50.95463858" lng="6.965410767" name="BIKE 21417"
+				bikes="1" bike="1" bike_numbers="21417" />
+			<place uid="509597" lat="50.9732224" lng="6.95134335" name="BIKE 21466"
+				bikes="1" bike="1" bike_numbers="21466" />
+			<place uid="509600" lat="50.96275117" lng="6.949093483" name="BIKE 21453"
+				bikes="1" bike="1" bike_numbers="21453" />
+			<place uid="509611" lat="50.97470815" lng="6.9528333" name="BIKE 21848"
+				bikes="1" bike="1" bike_numbers="21848" />
+			<place uid="509612" lat="50.93009305" lng="6.9517675" name="BIKE 21717"
+				bikes="1" bike="1" bike_numbers="21717" />
+			<place uid="509614" lat="50.923157832585" lng="6.9311333633959"
+				name="BIKE 21390" bikes="1" bike="1" bike_numbers="21390" />
+			<place uid="509620" lat="50.912681" lng="6.961851"
+				name="Sechtemer Str. / Bonner Str." bikes="1" terminal_type="unknown"
+				bike_numbers="21380" />
+			<place uid="509651" lat="50.95594772" lng="6.9304609" name="BIKE 21241"
+				bikes="1" bike="1" bike_numbers="21241" />
+			<place uid="509679" lat="50.93217908" lng="6.9325529" name="BIKE 21206"
+				bikes="1" bike="1" bike_numbers="21206" />
+			<place uid="509716" lat="50.92337917" lng="6.9799621" name="BIKE 21149"
+				bikes="1" bike="1" bike_numbers="21149" />
+			<place uid="509743" lat="50.93866347" lng="6.949545917" name="BIKE 21469"
+				bikes="1" bike="1" bike_numbers="21469" />
+			<place uid="509744" lat="50.9257396" lng="6.978384667" name="BIKE 21747"
+				bikes="1" bike="1" bike_numbers="21747" />
+			<place uid="509745" lat="50.91618298" lng="6.970140867" name="BIKE 21925"
+				bikes="1" bike="1" bike_numbers="21925" />
+			<place uid="509792" lat="50.96661398" lng="7.009233683" name="BIKE 21856"
+				bikes="1" bike="1" bike_numbers="21856" />
+			<place uid="509794" lat="50.94918855" lng="6.9446916" name="BIKE 21734"
+				bikes="1" bike="1" bike_numbers="21734" />
+			<place uid="509833" lat="50.93131252" lng="6.905288667" name="BIKE 21157"
+				bikes="1" bike="1" bike_numbers="21157" />
+			<place uid="509850" lat="50.94140105" lng="6.981188117" name="BIKE 21315"
+				bikes="1" bike="1" bike_numbers="21315" />
+			<place uid="509863" lat="50.96571182" lng="7.01876345" name="BIKE 21032"
+				bikes="1" bike="1" bike_numbers="21032" />
+			<place uid="509870" lat="50.95963307" lng="7.008402" name="BIKE 21041"
+				bikes="1" bike="1" bike_numbers="21041" />
+			<place uid="509890" lat="50.94442247" lng="6.9707587" name="BIKE 21320"
+				bikes="1" bike="1" bike_numbers="21320" />
+			<place uid="509893" lat="50.96859117" lng="6.94459445" name="BIKE 21055"
+				bikes="1" bike="1" bike_numbers="21055" />
+			<place uid="509932" lat="50.948994839564" lng="6.99447222054"
+				name="BIKE 21168" bikes="1" bike="1" bike_numbers="21168" />
+			<place uid="509945" lat="50.955581" lng="6.921967"
+				name="Ehrenfeldgürtel / Försterstr." bikes="1" terminal_type="unknown"
+				bike_numbers="21944" />
+			<place uid="509959" lat="50.91654015" lng="6.905889267" name="BIKE 21080"
+				bikes="1" bike="1" bike_numbers="21080" />
+			<place uid="509967" lat="50.9644854" lng="6.9985922" name="BIKE 21407"
+				bikes="1" bike="1" bike_numbers="21407" />
+			<place uid="509974" lat="50.927029" lng="50.927029" name="Universitätsstr. 22a"
+				bikes="1" terminal_type="unknown" bike_numbers="21116" />
+			<place uid="509991" lat="50.95233647" lng="6.902993983" name="BIKE 21590"
+				bikes="1" bike="1" bike_numbers="21590" />
+			<place uid="510002" lat="50.97701593" lng="7.0020408" name="BIKE 21171"
+				bikes="1" bike="1" bike_numbers="21171" />
+			<place uid="510009" lat="50.96203728" lng="7.0212256" name="BIKE 21029"
+				bikes="1" bike="1" bike_numbers="21029" />
+			<place uid="510010" lat="50.97944595" lng="6.9231986" name="BIKE 21603"
+				bikes="1" bike="1" bike_numbers="21603" />
+			<place uid="510011" lat="50.961153" lng="6.997014"
+				name="Wallstr. / Deutz-Mülheimer-Str." bikes="1" terminal_type="unknown"
+				bike_numbers="21548" />
+			<place uid="510020" lat="50.97873262" lng="6.92117475" name="BIKE 21076"
+				bikes="1" bike="1" bike_numbers="21076" />
+			<place uid="510024" lat="50.90955" lng="6.969594"
+				name="Tacitusstr. / Goltsteinstr." bikes="1" terminal_type="unknown"
+				bike_numbers="21584" />
+			<place uid="510029" lat="50.91982772" lng="6.953928617" name="BIKE 21243"
+				bikes="1" bike="1" bike_numbers="21243" />
+			<place uid="510030" lat="50.937066" lng="6.912161" name="Bürgeramt Lindenthal"
+				bikes="1" terminal_type="unknown" bike_numbers="21845" />
+			<place uid="510031" lat="50.91971237" lng="6.916159433" name="BIKE 21609"
+				bikes="1" bike="1" bike_numbers="21609" />
+			<place uid="510046" lat="50.95448617" lng="6.965668883" name="BIKE 21180"
+				bikes="1" bike="1" bike_numbers="21180" />
+			<place uid="510055" lat="50.96954588" lng="7.006539583" name="BIKE 21817"
+				bikes="1" bike="1" bike_numbers="21817" />
+			<place uid="510060" lat="50.93477475" lng="6.971995533" name="BIKE 21253"
+				bikes="1" bike="1" bike_numbers="21253" />
+			<place uid="510069" lat="50.9370699" lng="6.936191167" name="BIKE 21965"
+				bikes="1" bike="1" bike_numbers="21965" />
+			<place uid="510090" lat="50.920519419014" lng="6.9334978982806"
+				name="BIKE 21133" bikes="1" bike="1" bike_numbers="21133" />
+			<place uid="510091" lat="50.95045437" lng="6.9828015" name="BIKE 21624"
+				bikes="1" bike="1" bike_numbers="21624" />
+			<place uid="510092" lat="50.93516118" lng="6.973150183" name="BIKE 21610"
+				bikes="1" bike="1" bike_numbers="21610" />
+			<place uid="510095" lat="50.93833985" lng="6.923595783" name="BIKE 21932"
+				bikes="1" bike="1" bike_numbers="21932" />
+			<place uid="510117" lat="50.93521875" lng="6.979049433" name="BIKE 21009"
+				bikes="1" bike="1" bike_numbers="21009" />
+			<place uid="510135" lat="50.949400640137114" lng="6.950086355209351"
+				name="Maybachstr. / Ritterstr. (Saturn Parkplatz)" bikes="1"
+				terminal_type="unknown" bike_numbers="21183" />
+			<place uid="510136" lat="50.92384902" lng="6.95400215" name="BIKE 21964"
+				bikes="1" bike="1" bike_numbers="21964" />
+			<place uid="510145" lat="50.93776537" lng="6.9391107" name="BIKE 21386"
+				bikes="1" bike="1" bike_numbers="21386" />
+			<place uid="510173" lat="50.93520443" lng="6.9612943" name="BIKE 21825"
+				bikes="1" bike="1" bike_numbers="21825" />
+			<place uid="510182" lat="50.9666109" lng="6.964849267" name="BIKE 21957"
+				bikes="1" bike="1" bike_numbers="21957" />
+			<place uid="510183" lat="50.93853135" lng="6.968638583" name="BIKE 21596"
+				bikes="1" bike="1" bike_numbers="21596" />
+			<place uid="510195" lat="50.96260812" lng="6.944046717" name="BIKE 21256"
+				bikes="1" bike="1" bike_numbers="21256" />
+			<place uid="510202" lat="50.93326353" lng="7.00121795" name="BIKE 21240"
+				bikes="1" bike="1" bike_numbers="21240" />
+			<place uid="510213" lat="50.9453557" lng="6.922305" name="BIKE 21234"
+				bikes="1" bike="1" bike_numbers="21234" />
+			<place uid="510216" lat="50.94610143" lng="6.956670117" name="BIKE 21914"
+				bikes="1" bike="1" bike_numbers="21914" />
+			<place uid="510221" lat="50.92687048" lng="6.942874133" name="BIKE 21121"
+				bikes="1" bike="1" bike_numbers="21121" />
+			<place uid="510230" lat="50.95590942" lng="6.930449617" name="BIKE 21154"
+				bikes="1" bike="1" bike_numbers="21154" />
+			<place uid="510235" lat="50.95481163" lng="6.915824367" name="BIKE 21569"
+				bikes="1" bike="1" bike_numbers="21569" />
+			<place uid="510241" lat="50.93918752" lng="6.959917917" name="BIKE 21821"
+				bikes="1" bike="1" bike_numbers="21821" />
+			<place uid="510244" lat="50.93377845" lng="7.037354133" name="BIKE 21432"
+				bikes="1" bike="1" bike_numbers="21432" />
+			<place uid="510245" lat="50.95152715" lng="6.93211525" name="BIKE 21787"
+				bikes="1" bike="1" bike_numbers="21787" />
+			<place uid="510246" lat="50.959694" lng="6.954195583" name="BIKE 21939"
+				bikes="1" bike="1" bike_numbers="21939" />
+			<place uid="510265" lat="50.90371537" lng="6.918835067" name="BIKE 21064"
+				bikes="1" bike="1" bike_numbers="21064" />
+			<place uid="510267" lat="50.95442447" lng="6.95792015" name="BIKE 21720"
+				bikes="1" bike="1" bike_numbers="21720" />
+			<place uid="510268" lat="50.99817395" lng="6.9022371" name="BIKE 21260"
+				bikes="1" bike="1" bike_numbers="21260" />
+			<place uid="510270" lat="50.95355348" lng="6.905495017" name="BIKE 21281"
+				bikes="1" bike="1" bike_numbers="21281" />
+			<place uid="510276" lat="50.91029765" lng="6.937068217" name="BIKE 21322"
+				bikes="1" bike="1" bike_numbers="21322" />
+			<place uid="510285" lat="50.90863308" lng="6.95413415" name="BIKE 21597"
+				bikes="1" bike="1" bike_numbers="21597" />
+			<place uid="510306" lat="50.94388162" lng="6.952951467" name="BIKE 21791"
+				bikes="1" bike="1" bike_numbers="21791" />
+			<place uid="510307" lat="50.91903138" lng="6.930644167" name="BIKE 21321"
+				bikes="1" bike="1" bike_numbers="21321" />
+			<place uid="510326" lat="50.94049407" lng="6.97410545" name="BIKE 21599"
+				bikes="1" bike="1" bike_numbers="21599" />
+			<place uid="510340" lat="50.938493" lng="6.957838" name="Laurenzplatz"
+				bikes="1" terminal_type="unknown" bike_numbers="21031" />
+			<place uid="510367" lat="50.92798667" lng="6.935867667" name="BIKE 21400"
+				bikes="1" bike="1" bike_numbers="21400" />
+			<place uid="510378" lat="50.91523545" lng="6.992699967" name="BIKE 21182"
+				bikes="1" bike="1" bike_numbers="21182" />
+			<place uid="510406" lat="50.94836132" lng="6.986470667" name="BIKE 21341"
+				bikes="1" bike="1" bike_numbers="21341" />
+			<place uid="510419" lat="50.93426787" lng="6.97899845" name="BIKE 21392"
+				bikes="1" bike="1" bike_numbers="21392" />
+			<place uid="510424" lat="50.91954938" lng="6.919388933" name="BIKE 21187"
+				bikes="1" bike="1" bike_numbers="21187" />
+			<place uid="510429" lat="50.94979727" lng="6.910286233" name="BIKE 21428"
+				bikes="1" bike="1" bike_numbers="21428" />
+			<place uid="510437" lat="50.91679908" lng="6.960367967" name="BIKE 21340"
+				bikes="1" bike="1" bike_numbers="21340" />
+			<place uid="510451" lat="50.96510882" lng="6.884822417" name="BIKE 21916"
+				bikes="1" bike="1" bike_numbers="21916" />
+			<place uid="510456" lat="50.93997687" lng="6.9741484" name="BIKE 21409"
+				bikes="1" bike="1" bike_numbers="21409" />
+			<place uid="510458" lat="50.95331353" lng="6.9543965" name="BIKE 21235"
+				bikes="1" bike="1" bike_numbers="21235" />
+			<place uid="510472" lat="50.96538703" lng="6.912470733" name="BIKE 21376"
+				bikes="1" bike="1" bike_numbers="21376" />
+			<place uid="510493" lat="50.92127157" lng="6.92914165" name="BIKE 21232"
+				bikes="1" bike="1" bike_numbers="21232" />
+			<place uid="510496" lat="50.943745" lng="6.924896" name="Vogelsanger Str. 19"
+				bikes="1" terminal_type="unknown" bike_numbers="21312" />
+			<place uid="510502" lat="50.92759987" lng="6.9486218" name="BIKE 21736"
+				bikes="1" bike="1" bike_numbers="21736" />
+			<place uid="510505" lat="50.92221597" lng="6.956293883" name="BIKE 21174"
+				bikes="1" bike="1" bike_numbers="21174" />
+			<place uid="510512" lat="50.9240879" lng="6.98507715" name="BIKE 21416"
+				bikes="1" bike="1" bike_numbers="21416" />
+			<place uid="510514" lat="50.93617568" lng="6.957128517" name="BIKE 21727"
+				bikes="1" bike="1" bike_numbers="21727" />
+			<place uid="510521" lat="50.94369943" lng="6.93802425" name="BIKE 21063"
+				bikes="1" bike="1" bike_numbers="21063" />
+			<place uid="510522" lat="50.9254241" lng="6.96176305" name="BIKE 21887"
+				bikes="1" bike="1" bike_numbers="21887" />
+			<place uid="510543" lat="50.97309205" lng="7.00681895" name="BIKE 21697"
+				bikes="1" bike="1" bike_numbers="21697" />
+			<place uid="510544" lat="50.93969297" lng="6.978867133" name="BIKE 21793"
+				bikes="1" bike="1" bike_numbers="21793" />
+			<place uid="510552" lat="50.95994787" lng="6.98004525" name="BIKE 21017"
+				bikes="1" bike="1" bike_numbers="21017" />
+			<place uid="510553" lat="50.9245408" lng="6.956008017" name="BIKE 21685"
+				bikes="1" bike="1" bike_numbers="21685" />
+			<place uid="510562" lat="50.9482558" lng="6.9231553" name="BIKE 21144"
+				bikes="1" bike="1" bike_numbers="21144" />
+			<place uid="510563" lat="50.90586865" lng="6.952620483" name="BIKE 21228"
+				bikes="1" bike="1" bike_numbers="21228" />
+			<place uid="510584" lat="50.91213093" lng="6.923318783" name="BIKE 21884"
+				bikes="1" bike="1" bike_numbers="21884" />
+			<place uid="510593" lat="50.9644983" lng="6.947927333" name="BIKE 21142"
+				bikes="1" bike="1" bike_numbers="21142" />
+			<place uid="510598" lat="50.95288243" lng="6.957357517" name="BIKE 21633"
+				bikes="1" bike="1" bike_numbers="21633" />
+			<place uid="510600" lat="50.9097506" lng="6.946450783" name="BIKE 21828"
+				bikes="1" bike="1" bike_numbers="21828" />
+			<place uid="510604" lat="50.96129908" lng="6.959928333" name="BIKE 21412"
+				bikes="1" bike="1" bike_numbers="21412" />
+			<place uid="510605" lat="50.97252435" lng="7.011442017" name="BIKE 21951"
+				bikes="1" bike="1" bike_numbers="21951" />
+			<place uid="510617" lat="50.96761645" lng="7.003087317" name="BIKE 21375"
+				bikes="1" bike="1" bike_numbers="21375" />
+			<place uid="510630" lat="50.89484068" lng="6.992955017" name="BIKE 21381"
+				bikes="1" bike="1" bike_numbers="21381" />
+			<place uid="510632" lat="50.9888608" lng="6.99945355" name="BIKE 21023"
+				bikes="1" bike="1" bike_numbers="21023" />
+			<place uid="510636" lat="50.91565717" lng="6.934802067" name="BIKE 21136"
+				bikes="1" bike="1" bike_numbers="21136" />
+			<place uid="510665" lat="50.93715895" lng="6.906886833" name="BIKE 21781"
+				bikes="1" bike="1" bike_numbers="21781" />
+			<place uid="510671" lat="50.97801565" lng="6.950864383" name="BIKE 21622"
+				bikes="1" bike="1" bike_numbers="21622" />
+			<place uid="510672" lat="50.93777137" lng="6.923572483" name="BIKE 21751"
+				bikes="1" bike="1" bike_numbers="21751" />
+			<place uid="510675" lat="50.9423066" lng="6.911093317" name="BIKE 21139"
+				bikes="1" bike="1" bike_numbers="21139" />
+			<place uid="510681" lat="50.9575243" lng="7.012251333" name="BIKE 21643"
+				bikes="1" bike="1" bike_numbers="21643" />
+			<place uid="510684" lat="50.94855787" lng="6.92604315" name="BIKE 21078"
+				bikes="1" bike="1" bike_numbers="21078" />
+			<place uid="510701" lat="50.92582572" lng="6.936353967" name="BIKE 21143"
+				bikes="1" bike="1" bike_numbers="21143" />
+			<place uid="510704" lat="50.95358302" lng="6.96426555" name="BIKE 21775"
+				bikes="1" bike="1" bike_numbers="21775" />
+			<place uid="510713" lat="50.92091755" lng="6.909975867" name="BIKE 21418"
+				bikes="1" bike="1" bike_numbers="21418" />
+			<place uid="510724" lat="50.93171943" lng="6.948298583" name="BIKE 21383"
+				bikes="1" bike="1" bike_numbers="21383" />
+			<place uid="510727" lat="50.94024022" lng="6.957133833" name="BIKE 21832"
+				bikes="1" bike="1" bike_numbers="21832" />
+			<place uid="510729" lat="50.9060047" lng="6.967215367" name="BIKE 21437"
+				bikes="1" bike="1" bike_numbers="21437" />
+			<place uid="510733" lat="50.96888597" lng="6.945900583" name="BIKE 21688"
+				bikes="1" bike="1" bike_numbers="21688" />
+			<place uid="510734" lat="50.95400522" lng="6.950447533" name="BIKE 21239"
+				bikes="1" bike="1" bike_numbers="21239" />
+			<place uid="510741" lat="50.93698442" lng="6.989163633" name="BIKE 21495"
+				bikes="1" bike="1" bike_numbers="21495" />
+			<place uid="510742" lat="50.95289602" lng="6.915229567" name="BIKE 21855"
+				bikes="1" bike="1" bike_numbers="21855" />
+			<place uid="510743" lat="50.93392008" lng="6.934508083" name="BIKE 21460"
+				bikes="1" bike="1" bike_numbers="21460" />
+			<place uid="510752" lat="50.91012433" lng="6.97105785" name="BIKE 21906"
+				bikes="1" bike="1" bike_numbers="21906" />
+			<place uid="510753" lat="50.96568968" lng="7.00053395" name="BIKE 21406"
+				bikes="1" bike="1" bike_numbers="21406" />
+			<place uid="510754" lat="50.96104055" lng="6.99674435" name="BIKE 21693"
+				bikes="1" bike="1" bike_numbers="21693" />
+			<place uid="510757" lat="50.96486623" lng="6.944110817" name="BIKE 21465"
+				bikes="1" bike="1" bike_numbers="21465" />
+			<place uid="510758" lat="50.91006815" lng="6.92821175" name="BIKE 21332"
+				bikes="1" bike="1" bike_numbers="21332" />
+			<place uid="510759" lat="50.91424563" lng="6.93155245" name="BIKE 21656"
+				bikes="1" bike="1" bike_numbers="21656" />
+			<place uid="510760" lat="50.91436365" lng="6.931553567" name="BIKE 21113"
+				bikes="1" bike="1" bike_numbers="21113" />
+			<place uid="510763" lat="50.92061597" lng="6.9237736" name="BIKE 21107"
+				bikes="1" bike="1" bike_numbers="21107" />
+			<place uid="510766" lat="50.94173245" lng="6.957725533" name="BIKE 21473"
+				bikes="1" bike="1" bike_numbers="21473" />
+			<place uid="510769" lat="50.9095273" lng="6.969471533" name="BIKE 21012"
+				bikes="1" bike="1" bike_numbers="21012" />
+			<place uid="510770" lat="50.96804778" lng="6.9600409" name="BIKE 21792"
+				bikes="1" bike="1" bike_numbers="21792" />
+			<place uid="510785" lat="50.94924068" lng="6.94983665" name="BIKE 21110"
+				bikes="1" bike="1" bike_numbers="21110" />
+			<place uid="510787" lat="50.95200957" lng="6.912749983" name="BIKE 21711"
+				bikes="1" bike="1" bike_numbers="21711" />
+			<place uid="510790" lat="50.91003578" lng="6.92834355" name="BIKE 21811"
+				bikes="1" bike="1" bike_numbers="21811" />
+			<place uid="510793" lat="50.96673932" lng="6.947548383" name="BIKE 21546"
+				bikes="1" bike="1" bike_numbers="21546" />
+			<place uid="510797" lat="50.95585062" lng="6.93049555" name="BIKE 21968"
+				bikes="1" bike="1" bike_numbers="21968" />
+			<place uid="510803" lat="50.93089953" lng="6.916484017" name="BIKE 21494"
+				bikes="1" bike="1" bike_numbers="21494" />
+			<place uid="510807" lat="50.90807275" lng="6.919059133" name="BIKE 21190"
+				bikes="1" bike="1" bike_numbers="21190" />
+			<place uid="510808" lat="50.95464107" lng="6.929525483" name="BIKE 21362"
+				bikes="1" bike="1" bike_numbers="21362" />
+			<place uid="510811" lat="50.93402958" lng="6.934627717" name="BIKE 21039"
+				bikes="1" bike="1" bike_numbers="21039" />
+			<place uid="510814" lat="50.92796525" lng="6.915456833" name="BIKE 21299"
+				bikes="1" bike="1" bike_numbers="21299" />
+			<place uid="510816" lat="50.93623055" lng="6.897010033" name="BIKE 21484"
+				bikes="1" bike="1" bike_numbers="21484" />
+			<place uid="510819" lat="50.97343027" lng="6.94986675" name="BIKE 21797"
+				bikes="1" bike="1" bike_numbers="21797" />
+			<place uid="510820" lat="50.90799697" lng="6.91747635" name="BIKE 21581"
+				bikes="1" bike="1" bike_numbers="21581" />
+			<place uid="510824" lat="50.92138865" lng="6.98379945" name="BIKE 21813"
+				bikes="1" bike="1" bike_numbers="21813" />
+			<place uid="510826" lat="50.9213879" lng="6.98385425" name="BIKE 21346"
+				bikes="1" bike="1" bike_numbers="21346" />
+			<place uid="510835" lat="50.9512098" lng="6.92959565" name="BIKE 21093"
+				bikes="1" bike="1" bike_numbers="21093" />
+			<place uid="510837" lat="50.96295182" lng="6.94996615" name="BIKE 21264"
+				bikes="1" bike="1" bike_numbers="21264" />
+			<place uid="510842" lat="50.91915108" lng="6.941287767" name="BIKE 21952"
+				bikes="1" bike="1" bike_numbers="21952" />
+			<place uid="510843" lat="50.96062117" lng="6.94641875" name="BIKE 21858"
+				bikes="1" bike="1" bike_numbers="21858" />
+			<place uid="510845" lat="50.972016" lng="7.008262683" name="BIKE 21060"
+				bikes="1" bike="1" bike_numbers="21060" />
+			<place uid="510848" lat="50.97630453" lng="6.968144733" name="BIKE 21217"
+				bikes="1" bike="1" bike_numbers="21217" />
+			<place uid="510849" lat="50.90373498" lng="6.941336783" name="BIKE 21625"
+				bikes="1" bike="1" bike_numbers="21625" />
+			<place uid="510851" lat="50.9692481" lng="6.959105967" name="BIKE 21822"
+				bikes="1" bike="1" bike_numbers="21822" />
+			<place uid="510856" lat="50.93400095" lng="6.93556665" name="BIKE 21167"
+				bikes="1" bike="1" bike_numbers="21167" />
+			<place uid="510861" lat="50.93717702" lng="6.97120605" name="BIKE 21661"
+				bikes="1" bike="1" bike_numbers="21661" />
+		</city>
+	</country>
+</markers>
