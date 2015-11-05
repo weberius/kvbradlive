@@ -1,4 +1,4 @@
-package de.illilli.opendata.service.kvbradpositions;
+package de.illilli.opendata.service.kvbrradlive.query;
 
 import java.io.IOException;
 import java.sql.SQLException;

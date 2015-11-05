@@ -11,8 +11,8 @@ import org.apache.log4j.Logger;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 
-import de.illilli.opendata.service.kvbradpositions.SelectBike;
-import de.illilli.opendata.service.kvbradpositions.SelectBikeLastInserted;
+import de.illilli.opendata.service.kvbrradlive.query.SelectBike;
+import de.illilli.opendata.service.kvbrradlive.query.SelectBikeLastInserted;
 
 /**
  * Diese Facade sammelt Informationen, um sie danach in die Datenbank zu

@@ -1,4 +1,4 @@
-package de.illilli.opendata.service.kvbradpositions;
+package de.illilli.opendata.service.kvbrradlive.query;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -10,6 +10,8 @@ import org.junit.Before;
 
 import de.illilli.opendata.service.kvbradlive.BikeBo;
 import de.illilli.opendata.service.kvbradlive.ConnectionFactory;
+import de.illilli.opendata.service.kvbrradlive.query.SelectBikeLastInserted;
+import de.illilli.opendata.service.kvbrradlive.query.SelectFirstBikeRecord;
 
 public class SelectBikeLastInsertedTest {
 

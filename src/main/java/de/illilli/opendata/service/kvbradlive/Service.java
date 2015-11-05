@@ -17,6 +17,9 @@ import org.apache.log4j.Logger;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 
+import de.illilli.opendata.service.Facade;
+import de.illilli.opendata.service.kvbrradlive.query.SelectForAllBikesAndPositions;
+
 @Path("/")
 public class Service {
 
@@ -30,8 +33,7 @@ public class Service {
 
 	/**
 	 * <p>
-	 * Dieser Service holt die Daten von nextbike-live und schreibt die
-	 * aktuellen Positionen der Fahrräder in die Datenbank.
+	 * Dieser Service holt die Daten der Räder aus der Datenbank.
 	 * </p>
 	 * <p>
 	 * Beispiel:
@@ -50,6 +52,34 @@ public class Service {
 	@Produces({ MediaType.APPLICATION_JSON })
 	@Path("/")
 	public String getStandorteFahrraeder() throws JsonParseException,
+			JsonMappingException, IOException, SQLException, NamingException {
+		Facade facade = new BikesDataFacade(
+				new SelectForAllBikesAndPositions());
+		return facade.getJson();
+	}
+
+	/**
+	 * <p>
+	 * Dieser Service holt die Daten von nextbike-live und schreibt die
+	 * aktuellen Positionen der Fahrräder in die Datenbank.
+	 * </p>
+	 * <p>
+	 * Beispiel:
+	 * </p>
+	 * <a href="http://localhost:8080/kvbradlive/service/insert">/kvbradlive/
+	 * service/insert</a>
+	 * 
+	 * @return
+	 * @throws JsonParseException
+	 * @throws JsonMappingException
+	 * @throws IOException
+	 * @throws SQLException
+	 * @throws NamingException
+	 */
+	@GET
+	@Produces({ MediaType.APPLICATION_JSON })
+	@Path("/insert")
+	public String insertFahrraeder() throws JsonParseException,
 			JsonMappingException, IOException, SQLException, NamingException {
 		int inserted = new InsertBikeFacade().insert();
 		String msg = inserted + " bikes inserted";
