@@ -53,8 +53,9 @@ public class Service {
 	@Path("/")
 	public String getStandorteFahrraeder() throws JsonParseException,
 			JsonMappingException, IOException, SQLException, NamingException {
-		Facade facade = new BikesDataFacade(
-				new SelectForAllBikesAndPositions());
+		request.setCharacterEncoding("UTF-8");
+		response.setCharacterEncoding("UTF-8");
+		Facade facade = new BikesDataFacade(new SelectForAllBikesAndPositions());
 		return facade.getJson();
 	}
 
