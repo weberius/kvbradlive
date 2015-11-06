@@ -52,7 +52,7 @@ public class RecordingSingleton {
 
 		private static final Logger logger = Logger
 				.getLogger(KvbRadThread.class);
-		private static long milliseconds = 30000;
+		private static long milliseconds = 300000;
 		private static boolean letItRun = true;
 
 		@Override
