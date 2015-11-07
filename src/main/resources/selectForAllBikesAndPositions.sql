@@ -3,5 +3,5 @@ select
 from 
   bike
 order by
-  modtime
+  number, modtime
 ;
