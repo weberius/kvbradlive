@@ -59,6 +59,19 @@ public class Service {
 		return facade.getJson();
 	}
 
+	@GET
+	@Produces({ MediaType.APPLICATION_JSON })
+	@Path("/datatable")
+	public String getStandorteFahrraederForDataTable()
+			throws JsonParseException, JsonMappingException, IOException,
+			SQLException, NamingException {
+		request.setCharacterEncoding("UTF-8");
+		response.setCharacterEncoding("UTF-8");
+		Facade facade = new BikesDataFacade(new SelectForAllBikesAndPositions());
+		String json = "{\"data\":" + facade.getJson() + "}";
+		return json;
+	}
+
 	/**
 	 * <p>
 	 * Dieser Service holt die Daten von nextbike-live und schreibt die
