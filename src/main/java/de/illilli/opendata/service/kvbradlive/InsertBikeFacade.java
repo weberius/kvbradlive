@@ -1,6 +1,8 @@
 package de.illilli.opendata.service.kvbradlive;
 
 import java.io.IOException;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.sql.SQLException;
 import java.util.List;
 
@@ -71,10 +73,21 @@ public class InsertBikeFacade {
 				}
 
 			} else {
-				boolean isSameLat = selectBike.getBikeBoList().get(0).getLat() == bo
-						.getLat();
-				boolean isSameLng = selectBike.getBikeBoList().get(0).getLng() == bo
-						.getLng();
+				int places = 4;
+
+				double firstLat = new BigDecimal(selectBike.getBikeBoList()
+						.get(0).getLat())
+						.setScale(places, RoundingMode.HALF_UP).doubleValue();
+				double secondLat = new BigDecimal(bo.getLat()).setScale(places,
+						RoundingMode.HALF_UP).doubleValue();
+				double firstLng = new BigDecimal(selectBike.getBikeBoList()
+						.get(0).getLng())
+						.setScale(places, RoundingMode.HALF_UP).doubleValue();
+				double secondLng = new BigDecimal(bo.getLng()).setScale(places,
+						RoundingMode.HALF_UP).doubleValue();
+
+				boolean isSameLat = firstLat == secondLat;
+				boolean isSameLng = firstLng == secondLng;
 				// if the position is different to the previous insert; else
 				// don't!
 				insertBike = !isSameLat || !isSameLng;
