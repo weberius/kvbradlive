@@ -16,7 +16,7 @@ public class BikesMapFacade implements Facade {
 	private static final Logger logger = Logger.getLogger(BikesMapFacade.class);
 
 	private List<BikeBo> bikeList;
-	Map<Integer, List<BikeBo>> bikesMap;
+	private Map<Integer, List<BikeBo>> bikesMap;
 	final static String DATE_FORMAT = "dd.MM.yyyy hh:mm";
 
 	public BikesMapFacade(SelectBike selectBike) {
