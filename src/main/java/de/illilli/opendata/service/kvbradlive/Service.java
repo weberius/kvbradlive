@@ -33,7 +33,8 @@ public class Service {
 
 	/**
 	 * <p>
-	 * Dieser Service holt die Daten der Räder aus der Datenbank.
+	 * Dieser Service holt die Daten der Räder aus der Datenbank und gibt sie
+	 * als Liste zurück.
 	 * </p>
 	 * <p>
 	 * Beispiel:
@@ -59,6 +60,16 @@ public class Service {
 		return facade.getJson();
 	}
 
+	/**
+	 * liefert alle Datensätze der Fahrräder für eine datatable zurück.
+	 * 
+	 * @return
+	 * @throws JsonParseException
+	 * @throws JsonMappingException
+	 * @throws IOException
+	 * @throws SQLException
+	 * @throws NamingException
+	 */
 	@GET
 	@Produces({ MediaType.APPLICATION_JSON })
 	@Path("/datatable")
@@ -70,6 +81,29 @@ public class Service {
 		Facade facade = new BikesDataFacade(new SelectForAllBikesAndPositions());
 		String json = "{\"data\":" + facade.getJson() + "}";
 		return json;
+	}
+
+	/**
+	 * Die Bikesmap liefert alle Fahrräder in der Map zurück; key ist die
+	 * bike-number, value ist die Liste der Punkte, die dem Bike zuordnenbar
+	 * sind.
+	 * 
+	 * @return
+	 * @throws JsonParseException
+	 * @throws JsonMappingException
+	 * @throws IOException
+	 * @throws SQLException
+	 * @throws NamingException
+	 */
+	@GET
+	@Produces({ MediaType.APPLICATION_JSON })
+	@Path("/bikesmap")
+	public String getBikesMap() throws JsonParseException,
+			JsonMappingException, IOException, SQLException, NamingException {
+		request.setCharacterEncoding("UTF-8");
+		response.setCharacterEncoding("UTF-8");
+		Facade facade = new BikesMapFacade(new SelectForAllBikesAndPositions());
+		return facade.getJson();
 	}
 
 	/**
@@ -115,9 +149,10 @@ public class Service {
 	 * 
 	 * @return
 	 */
-	@GET
-	@Produces({ MediaType.APPLICATION_JSON })
-	@Path("/start")
+	// @GET
+	// @Produces({ MediaType.APPLICATION_JSON })
+	// @Path("/start")
+	@Deprecated
 	public String startRecording() {
 		RecordingSingleton.getInstance().start();
 		return "start";
@@ -133,9 +168,10 @@ public class Service {
 	 * 
 	 * @return
 	 */
-	@GET
-	@Produces({ MediaType.APPLICATION_JSON })
-	@Path("/stop")
+	// @GET
+	// @Produces({ MediaType.APPLICATION_JSON })
+	// @Path("/stop")
+	@Deprecated
 	public String stopRecording() {
 		RecordingSingleton.getInstance().stop();
 		return "stop";
