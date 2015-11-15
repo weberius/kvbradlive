@@ -1,0 +1,17 @@
+select 
+  uid, name, bike, number, modtime, geom
+from 
+  bike
+where 
+  number in (
+    select 
+      distinct number
+    from 
+      bike
+    where 
+      modtime > ?
+--      modtime > '2015-11-13 20:52:05.733391'
+  )
+order by
+  number, modtime desc
+;
