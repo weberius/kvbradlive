@@ -10,7 +10,6 @@ where
       bike
     where 
       modtime > ?
---      modtime > '2015-11-13 20:52:05.733391'
   )
 order by
   number, modtime desc
