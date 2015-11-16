@@ -2,7 +2,6 @@ package de.illilli.opendata.service.kvbrradlive.query;
 
 import java.io.IOException;
 import java.sql.SQLException;
-import java.sql.Timestamp;
 import java.util.List;
 
 import javax.naming.NamingException;
@@ -29,8 +28,7 @@ public class SelectAllBikesAndPositionsDependsOnModtimeTest {
 		// define db-connection
 		ConnectionFactory.setUpConnectionForJndi();
 
-		long t = System.currentTimeMillis() - ONEDAY;
-		Timestamp modtime = new Timestamp(t);
+		long modtime = System.currentTimeMillis() - ONEDAY;
 		SelectBike selectBike = new SelectAllBikesAndPositionsDependsOnModtime(
 				modtime);
 		List<BikeBo> bikeBoList = selectBike.getBikeBoList();

@@ -11,10 +11,11 @@ import javax.naming.NamingException;
  */
 public class SelectAllBikesAndPositionsDependsOnModtime extends SelectBike {
 
-	public SelectAllBikesAndPositionsDependsOnModtime(Timestamp modtime)
+	public SelectAllBikesAndPositionsDependsOnModtime(long time)
 			throws SQLException, NamingException, IOException {
 
 		queryString = "/selectAllBikesAndPositionsDependsOnModtime.sql";
+		Timestamp modtime = new Timestamp(time);
 		runSelect(modtime);
 	}
 }

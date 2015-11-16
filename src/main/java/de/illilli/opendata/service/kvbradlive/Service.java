@@ -18,6 +18,7 @@ import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 
 import de.illilli.opendata.service.Facade;
+import de.illilli.opendata.service.kvbrradlive.query.SelectAllBikesAndPositionsDependsOnModtime;
 import de.illilli.opendata.service.kvbrradlive.query.SelectForAllBikesAndPositions;
 
 @Path("/")
@@ -103,6 +104,14 @@ public class Service {
 		request.setCharacterEncoding("UTF-8");
 		response.setCharacterEncoding("UTF-8");
 		Facade facade = new BikesMapFacade(new SelectForAllBikesAndPositions());
+		if (request.getParameter("lastrun") != null) {
+			long lastrun = Long.parseLong(request.getParameter("lastrun"));
+			facade = new BikesMapFacade(
+					new SelectAllBikesAndPositionsDependsOnModtime(lastrun));
+		} else {
+			facade = new BikesMapFacade(new SelectForAllBikesAndPositions());
+		}
+
 		return facade.getJson();
 	}
 
