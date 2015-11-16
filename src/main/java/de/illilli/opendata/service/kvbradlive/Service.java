@@ -88,6 +88,11 @@ public class Service {
 	 * Die Bikesmap liefert alle Fahrräder in der Map zurück; key ist die
 	 * bike-number, value ist die Liste der Punkte, die dem Bike zuordnenbar
 	 * sind.
+	 * <p>
+	 * Bsp.: <a href=
+	 * "http://localhost:8080/kvbradlive/service/bikesmap?lastrun=1446786791072"
+	 * >/kvbradlive/service/bikesmap?lastrun=&lt;timestamp&gt;</a>
+	 * </p>
 	 * 
 	 * @return
 	 * @throws JsonParseException

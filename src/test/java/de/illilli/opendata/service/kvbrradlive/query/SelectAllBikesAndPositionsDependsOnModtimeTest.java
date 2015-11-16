@@ -33,7 +33,7 @@ public class SelectAllBikesAndPositionsDependsOnModtimeTest {
 		SelectBike selectBike = new SelectAllBikesAndPositionsDependsOnModtime(
 				modtime);
 		List<BikeBo> bikeBoList = selectBike.getBikeBoList();
-		logger.debug(bikeBoList.size() + "; " + bikeBoList);
+		logger.debug(modtime + "; " + bikeBoList.size() + "; " + bikeBoList);
 	}
 
 }
