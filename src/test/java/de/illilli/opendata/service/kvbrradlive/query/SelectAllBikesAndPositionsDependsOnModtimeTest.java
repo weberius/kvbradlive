@@ -29,6 +29,7 @@ public class SelectAllBikesAndPositionsDependsOnModtimeTest {
 		ConnectionFactory.setUpConnectionForJndi();
 
 		long modtime = System.currentTimeMillis() - ONEDAY;
+		logger.debug(modtime);
 		SelectBike selectBike = new SelectAllBikesAndPositionsDependsOnModtime(
 				modtime);
 		List<BikeBo> bikeBoList = selectBike.getBikeBoList();
