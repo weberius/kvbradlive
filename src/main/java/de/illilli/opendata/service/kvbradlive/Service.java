@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
@@ -19,6 +20,7 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 
 import de.illilli.opendata.service.Facade;
 import de.illilli.opendata.service.kvbrradlive.query.SelectAllBikesAndPositionsDependsOnModtime;
+import de.illilli.opendata.service.kvbrradlive.query.SelectAllBikesAndPositionsNewerThanModtime;
 import de.illilli.opendata.service.kvbrradlive.query.SelectForAllBikesAndPositions;
 
 @Path("/")
@@ -108,7 +110,7 @@ public class Service {
 			JsonMappingException, IOException, SQLException, NamingException {
 		request.setCharacterEncoding("UTF-8");
 		response.setCharacterEncoding("UTF-8");
-		Facade facade = new BikesMapFacade(new SelectForAllBikesAndPositions());
+		Facade facade = null;
 		if (request.getParameter("lastrun") != null) {
 			long lastrun = Long.parseLong(request.getParameter("lastrun"));
 			facade = new BikesMapFacade(
@@ -117,6 +119,19 @@ public class Service {
 			facade = new BikesMapFacade(new SelectForAllBikesAndPositions());
 		}
 
+		return facade.getJson();
+	}
+
+	@GET
+	@Produces({ MediaType.APPLICATION_JSON })
+	@Path("/bikesmap/{modtime}")
+	public String getBikesMap(@PathParam("modtime") long modtime)
+			throws JsonParseException, JsonMappingException, IOException,
+			SQLException, NamingException {
+		request.setCharacterEncoding("UTF-8");
+		response.setCharacterEncoding("UTF-8");
+		Facade facade = new BikesMapFacade(
+				new SelectAllBikesAndPositionsNewerThanModtime(modtime));
 		return facade.getJson();
 	}
 
