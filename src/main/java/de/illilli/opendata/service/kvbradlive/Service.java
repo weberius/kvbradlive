@@ -2,6 +2,7 @@ package de.illilli.opendata.service.kvbradlive;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.Date;
 
 import javax.naming.NamingException;
 import javax.servlet.http.HttpServletRequest;
@@ -122,6 +123,27 @@ public class Service {
 		return facade.getJson();
 	}
 
+	/**
+	 * <p>
+	 * Dieser Service-Endpunkt gibt alle Fahrräder zurück, deren Position sich
+	 * nach dem Zeitstempel (modtime) geändert hat. Fahrraddaten von Fahrrädern
+	 * deren Position sich vor dem Zeitstempel geändert haben, werden nicht
+	 * geliefert.
+	 * </p>
+	 * <p>
+	 * Beispiel: <a
+	 * href="http://localhost:8080/kvbradlive/service/bikesmap/1447043598324"
+	 * >/kvbradlive /service/bikesmap/&lt;modtime&gt;</a>
+	 * </p>
+	 * 
+	 * @param modtime
+	 * @return
+	 * @throws JsonParseException
+	 * @throws JsonMappingException
+	 * @throws IOException
+	 * @throws SQLException
+	 * @throws NamingException
+	 */
 	@GET
 	@Produces({ MediaType.APPLICATION_JSON })
 	@Path("/bikesmap/{modtime}")
@@ -130,6 +152,7 @@ public class Service {
 			SQLException, NamingException {
 		request.setCharacterEncoding("UTF-8");
 		response.setCharacterEncoding("UTF-8");
+		logger.info("modtime = '" + new Date(modtime).toString() + "'");
 		Facade facade = new BikesMapFacade(
 				new SelectAllBikesAndPositionsNewerThanModtime(modtime));
 		return facade.getJson();
