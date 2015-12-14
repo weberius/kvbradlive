@@ -88,9 +88,12 @@ public class Service {
 	}
 
 	/**
-	 * Die Bikesmap liefert alle Fahrräder in der Map zurück; key ist die
-	 * bike-number, value ist die Liste der Punkte, die dem Bike zuordnenbar
-	 * sind.
+	 * <p>
+	 * Dieser Service-Endpunkt gibt alle Fahrräder zurück, deren Position sich
+	 * nach dem Zeitstempel (modtime) geändert hat. Fahrraddaten von Fahrrädern
+	 * deren Position sich vor dem Zeitstempel geändert haben, werden nicht
+	 * geliefert.
+	 * </p>
 	 * <p>
 	 * Bsp.: <a href=
 	 * "http://localhost:8080/kvbradlive/service/bikesmap?lastrun=1446786791072"
@@ -186,47 +189,4 @@ public class Service {
 		logger.info(msg);
 		return msg;
 	}
-
-	/**
-	 * <p>
-	 * This Endpoint starts the periodical Check for Bikes. Default value is 10
-	 * minutes. It is possible to change the period by providing interval
-	 * Information.
-	 * </p>
-	 * <p>
-	 * Example: <a
-	 * href="http://localhost:8080/kvbradlive/service/start">/kvbradlive
-	 * /service/start</a>
-	 * </p>
-	 * 
-	 * @return
-	 */
-	// @GET
-	// @Produces({ MediaType.APPLICATION_JSON })
-	// @Path("/start")
-	@Deprecated
-	public String startRecording() {
-		RecordingSingleton.getInstance().start();
-		return "start";
-	}
-
-	/**
-	 * This Endpoint stopps the periodical check of bikes
-	 * <p>
-	 * Example: <a
-	 * href="http://localhost:8080/kvbradlive/service/stop">/kvbradlive
-	 * /service/stop</a>
-	 * </p>
-	 * 
-	 * @return
-	 */
-	// @GET
-	// @Produces({ MediaType.APPLICATION_JSON })
-	// @Path("/stop")
-	@Deprecated
-	public String stopRecording() {
-		RecordingSingleton.getInstance().stop();
-		return "stop";
-	}
-
 }
