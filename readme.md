@@ -35,6 +35,14 @@ Zur Zeit wird nur eine Tabelle verwendet; DDL:
 	);
 	SELECT AddGeometryColumn ('public','bike','geom',4326,'POINT',2);
 
+## REST Endpoints
+
+Folgende REST Endpoints stehen zur Verfügung
+
+### /kvbradlive/service
+### /kvbradlive/service/datatable
+### /kvbradlive/service/bikesmap
+
 ## Test
 
 ### Tests mit Datenbank
