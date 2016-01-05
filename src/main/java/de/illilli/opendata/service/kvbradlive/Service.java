@@ -8,6 +8,7 @@ import javax.naming.NamingException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.ws.rs.GET;
+import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
@@ -168,9 +169,8 @@ public class Service {
 	 * </p>
 	 * <p>
 	 * Beispiel:
+	 * <code>curl -X PUT http://localhost:8080/kvbradlive/service/put</code>
 	 * </p>
-	 * <a href="http://localhost:8080/kvbradlive/service/insert">/kvbradlive/
-	 * service/insert</a>
 	 * 
 	 * @return
 	 * @throws JsonParseException
@@ -179,10 +179,10 @@ public class Service {
 	 * @throws SQLException
 	 * @throws NamingException
 	 */
-	@GET
+	@PUT
 	@Produces({ MediaType.APPLICATION_JSON })
-	@Path("/insert")
-	public String insertFahrraeder() throws JsonParseException,
+	@Path("/put")
+	public String putKvbradpositions() throws JsonParseException,
 			JsonMappingException, IOException, SQLException, NamingException {
 		int inserted = new InsertBikeFacade().insert();
 		String msg = inserted + " bikes inserted";
