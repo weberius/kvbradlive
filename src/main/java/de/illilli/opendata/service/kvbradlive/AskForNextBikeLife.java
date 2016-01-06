@@ -13,10 +13,9 @@ import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 
 public class AskForNextBikeLife {
 
-	String url = "http://nextbike.net/maps/nextbike-live.xml?city=14";
+	String url = "http://api.nextbike.net/maps/nextbike-live.xml?city=14";
 
-	private static final Logger logger = Logger
-			.getLogger(AskForNextBikeLife.class);
+	private static final Logger logger = Logger.getLogger(AskForNextBikeLife.class);
 
 	private Markers markers;
 	private InputStream inputStream;
@@ -29,8 +28,7 @@ public class AskForNextBikeLife {
 		this.inputStream = inputStream;
 	}
 
-	public Markers getMarkers() throws JsonParseException,
-			JsonMappingException, IOException {
+	public Markers getMarkers() throws JsonParseException, JsonMappingException, IOException {
 		XmlMapper mapper = new XmlMapper();
 		markers = mapper.readValue(inputStream, Markers.class);
 		logger.debug(markers.toString());
