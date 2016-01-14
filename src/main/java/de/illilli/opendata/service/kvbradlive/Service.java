@@ -44,8 +44,8 @@ public class Service {
 	 * <p>
 	 * Beispiel:
 	 * </p>
-	 * <a
-	 * href="http://localhost:8080/kvbradlive/service">/kvbradlive/service</a>
+	 * <a href="http://localhost:8080/kvbradlive/service">/kvbradlive/service
+	 * </a>
 	 * 
 	 * @return
 	 * @throws NamingException
@@ -57,8 +57,8 @@ public class Service {
 	@GET
 	@Produces({ MediaType.APPLICATION_JSON })
 	@Path("/")
-	public String getStandorteFahrraeder() throws JsonParseException,
-			JsonMappingException, IOException, SQLException, NamingException {
+	public String getStandorteFahrraeder()
+			throws JsonParseException, JsonMappingException, IOException, SQLException, NamingException {
 		request.setCharacterEncoding("UTF-8");
 		response.setCharacterEncoding("UTF-8");
 		Facade facade = new BikesDataFacade(new SelectForAllBikesAndPositions());
@@ -79,8 +79,7 @@ public class Service {
 	@Produces({ MediaType.APPLICATION_JSON })
 	@Path("/datatable")
 	public String getStandorteFahrraederForDataTable()
-			throws JsonParseException, JsonMappingException, IOException,
-			SQLException, NamingException {
+			throws JsonParseException, JsonMappingException, IOException, SQLException, NamingException {
 		request.setCharacterEncoding("UTF-8");
 		response.setCharacterEncoding("UTF-8");
 		Facade facade = new BikesDataFacade(new SelectForAllBikesAndPositions());
@@ -111,15 +110,14 @@ public class Service {
 	@GET
 	@Produces({ MediaType.APPLICATION_JSON })
 	@Path("/bikesmap")
-	public String getBikesMap() throws JsonParseException,
-			JsonMappingException, IOException, SQLException, NamingException {
+	public String getBikesMap()
+			throws JsonParseException, JsonMappingException, IOException, SQLException, NamingException {
 		request.setCharacterEncoding("UTF-8");
 		response.setCharacterEncoding("UTF-8");
 		Facade facade = null;
 		if (request.getParameter("lastrun") != null) {
 			long lastrun = Long.parseLong(request.getParameter("lastrun"));
-			facade = new BikesMapFacade(
-					new SelectAllBikesAndPositionsDependsOnModtime(lastrun));
+			facade = new BikesMapFacade(new SelectAllBikesAndPositionsDependsOnModtime(lastrun));
 		} else {
 			facade = new BikesMapFacade(new SelectForAllBikesAndPositions());
 		}
@@ -135,8 +133,8 @@ public class Service {
 	 * geliefert.
 	 * </p>
 	 * <p>
-	 * Beispiel: <a
-	 * href="http://localhost:8080/kvbradlive/service/bikesmap/1447043598324"
+	 * Beispiel:
+	 * <a href="http://localhost:8080/kvbradlive/service/bikesmap/1447043598324"
 	 * >/kvbradlive /service/bikesmap/&lt;modtime&gt;</a>
 	 * </p>
 	 * 
@@ -152,13 +150,38 @@ public class Service {
 	@Produces({ MediaType.APPLICATION_JSON })
 	@Path("/bikesmap/{modtime}")
 	public String getBikesMap(@PathParam("modtime") long modtime)
-			throws JsonParseException, JsonMappingException, IOException,
-			SQLException, NamingException {
+			throws JsonParseException, JsonMappingException, IOException, SQLException, NamingException {
 		request.setCharacterEncoding("UTF-8");
 		response.setCharacterEncoding("UTF-8");
 		logger.info("modtime = '" + new Date(modtime).toString() + "'");
-		Facade facade = new BikesMapFacade(
-				new SelectAllBikesAndPositionsNewerThanModtime(modtime));
+		Facade facade = new BikesMapFacade(new SelectAllBikesAndPositionsNewerThanModtime(modtime));
+		return facade.getJson();
+	}
+
+	/**
+	 * <p>
+	 * Beispiel: <a href=
+	 * "http://localhost:8080/kvbradlive/service/bikeslist/1447043598324" >
+	 * /kvbradlive /service/bikeslist/&lt;modtime&gt;</a>
+	 * </p>
+	 * 
+	 * @param modtime
+	 * @return
+	 * @throws JsonParseException
+	 * @throws JsonMappingException
+	 * @throws IOException
+	 * @throws SQLException
+	 * @throws NamingException
+	 */
+	@GET
+	@Produces({ MediaType.APPLICATION_JSON })
+	@Path("/bikeslist/{modtime}")
+	public String getBikesList(@PathParam("modtime") long modtime)
+			throws JsonParseException, JsonMappingException, IOException, SQLException, NamingException {
+		request.setCharacterEncoding("UTF-8");
+		response.setCharacterEncoding("UTF-8");
+		logger.info("modtime = '" + new Date(modtime).toString() + "'");
+		Facade facade = new BikesListFacade(new SelectAllBikesAndPositionsNewerThanModtime(modtime));
 		return facade.getJson();
 	}
 
@@ -182,8 +205,8 @@ public class Service {
 	@PUT
 	@Produces({ MediaType.APPLICATION_JSON })
 	@Path("/put")
-	public String putKvbradpositions() throws JsonParseException,
-			JsonMappingException, IOException, SQLException, NamingException {
+	public String putKvbradpositions()
+			throws JsonParseException, JsonMappingException, IOException, SQLException, NamingException {
 		int inserted = new InsertBikeFacade().insert();
 		String msg = inserted + " bikes inserted";
 		logger.info(msg);
