@@ -24,6 +24,7 @@ import de.illilli.opendata.service.Facade;
 import de.illilli.opendata.service.kvbrradlive.query.SelectAllBikesAndPositionsDependsOnModtime;
 import de.illilli.opendata.service.kvbrradlive.query.SelectAllBikesAndPositionsNewerThanModtime;
 import de.illilli.opendata.service.kvbrradlive.query.SelectForAllBikesAndPositions;
+import de.illilli.opendata.service.kvbrradlive.query.SelectLastPositionsOfBikes;
 
 @Path("/")
 public class Service {
@@ -187,6 +188,32 @@ public class Service {
 
 	/**
 	 * <p>
+	 * Beispiel: <a href=
+	 * "http://localhost:8080/kvbradlive/service/bikeslist/allbikeslatestposition"
+	 * > /kvbradlive/service/bikeslist/allbikeslatestposition</a>
+	 * </p>
+	 * 
+	 * @param modtime
+	 * @return
+	 * @throws JsonParseException
+	 * @throws JsonMappingException
+	 * @throws IOException
+	 * @throws SQLException
+	 * @throws NamingException
+	 */
+	@GET
+	@Produces({ MediaType.APPLICATION_JSON })
+	@Path("/bikeslist/allbikeslatestposition")
+	public String getAllbikeslatestposition()
+			throws JsonParseException, JsonMappingException, IOException, SQLException, NamingException {
+		request.setCharacterEncoding("UTF-8");
+		response.setCharacterEncoding("UTF-8");
+		Facade facade = new BikesListFacade(new SelectLastPositionsOfBikes());
+		return facade.getJson();
+	}
+
+	/**
+	 * <p>
 	 * Dieser Service holt die Daten von nextbike-live und schreibt die
 	 * aktuellen Positionen der Fahrräder in die Datenbank.
 	 * </p>
@@ -212,4 +239,5 @@ public class Service {
 		logger.info(msg);
 		return msg;
 	}
+
 }
