@@ -189,8 +189,8 @@ public class Service {
 	/**
 	 * <p>
 	 * Beispiel: <a href=
-	 * "http://localhost:8080/kvbradlive/service/bikeslist/allbikeslatestposition"
-	 * > /kvbradlive/service/bikeslist/allbikeslatestposition</a>
+	 * "http://localhost:8080/kvbradlive/service/allbikeslatestposition/bikeslist"
+	 * > /kvbradlive/service/allbikeslatestposition/bikeslist</a>
 	 * </p>
 	 * 
 	 * @param modtime
@@ -203,7 +203,7 @@ public class Service {
 	 */
 	@GET
 	@Produces({ MediaType.APPLICATION_JSON })
-	@Path("/bikeslist/allbikeslatestposition")
+	@Path("/allbikeslatestposition/bikeslist")
 	public String getAllbikeslatestposition()
 			throws JsonParseException, JsonMappingException, IOException, SQLException, NamingException {
 		request.setCharacterEncoding("UTF-8");
