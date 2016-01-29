@@ -24,6 +24,7 @@ import de.illilli.opendata.service.Facade;
 import de.illilli.opendata.service.kvbrradlive.query.SelectAllBikesAndPositionsDependsOnModtime;
 import de.illilli.opendata.service.kvbrradlive.query.SelectAllBikesAndPositionsNewerThanModtime;
 import de.illilli.opendata.service.kvbrradlive.query.SelectForAllBikesAndPositions;
+import de.illilli.opendata.service.kvbrradlive.query.SelectForBikeAndPositions;
 import de.illilli.opendata.service.kvbrradlive.query.SelectLastPositionsOfBikes;
 
 @Path("/")
@@ -183,6 +184,33 @@ public class Service {
 		response.setCharacterEncoding("UTF-8");
 		logger.info("modtime = '" + new Date(modtime).toString() + "'");
 		Facade facade = new BikesListFacade(new SelectAllBikesAndPositionsNewerThanModtime(modtime));
+		return facade.getJson();
+	}
+
+	/**
+	 * <p>
+	 * Beispiel:
+	 * <a href= "http://localhost:8080/kvbradlive/service/bike/21002" >
+	 * /kvbradlive/service/bike/&lt;number&gt;</a>
+	 * </p>
+	 * 
+	 * @param number
+	 * @return
+	 * @throws JsonParseException
+	 * @throws JsonMappingException
+	 * @throws IOException
+	 * @throws SQLException
+	 * @throws NamingException
+	 */
+	@GET
+	@Produces({ MediaType.APPLICATION_JSON })
+	@Path("/bike/{number}")
+	public String getBike(@PathParam("number") int number)
+			throws JsonParseException, JsonMappingException, IOException, SQLException, NamingException {
+		request.setCharacterEncoding("UTF-8");
+		response.setCharacterEncoding("UTF-8");
+		logger.info("number = '" + number + "'");
+		Facade facade = new BikesListFacade(new SelectForBikeAndPositions(number));
 		return facade.getJson();
 	}
 

@@ -42,6 +42,7 @@ Folgende REST Endpoints stehen zur Verfügung
 ### /kvbradlive/service
 ### /kvbradlive/service/datatable
 ### /kvbradlive/service/bikesmap
+### /kvbradlive/service/bike/&lt;number&gt;
 ### /kvbradlive/service/allbikeslatestposition/bikeslist
 
 ## Test
