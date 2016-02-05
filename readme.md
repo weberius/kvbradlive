@@ -35,6 +35,13 @@ Zur Zeit wird nur eine Tabelle verwendet; DDL:
 	);
 	SELECT AddGeometryColumn ('public','bike','geom',4326,'POINT',2);
 
+Für das Logging der Abfragen wird folgende Tabelle benötigt:
+
+    CREATE TABLE kvbradlive (
+        numberofinsert      integer,
+        modtime      timestamp DEFAULT current_timestamp
+    );
+
 ## REST Endpoints
 
 Folgende REST Endpoints stehen zur Verfügung

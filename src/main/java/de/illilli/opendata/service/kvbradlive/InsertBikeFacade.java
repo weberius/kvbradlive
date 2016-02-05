@@ -27,15 +27,13 @@ import de.illilli.opendata.service.kvbrradlive.query.SelectBikeLastInserted;
  */
 public class InsertBikeFacade {
 
-	private static final Logger logger = Logger
-			.getLogger(InsertBikeFacade.class);
+	private static final Logger logger = Logger.getLogger(InsertBikeFacade.class);
 
-	public InsertBikeFacade() throws JsonParseException, JsonMappingException,
-			IOException, SQLException, NamingException {
+	public InsertBikeFacade()
+			throws JsonParseException, JsonMappingException, IOException, SQLException, NamingException {
 	}
 
-	public int insert() throws JsonParseException, JsonMappingException,
-			IOException, SQLException, NamingException {
+	public int insert() throws JsonParseException, JsonMappingException, IOException, SQLException, NamingException {
 
 		// just for reporting
 		int countInsertedBikes = 0;
@@ -45,8 +43,7 @@ public class InsertBikeFacade {
 		Markers markers = new AskForNextBikeLife().getData();
 		// 2. Get the Bikes
 		logger.info("2. Get the Bikes");
-		List<BikeBo> bikeBoList = new BikesFromNextbike(markers)
-				.getBikeBoList();
+		List<BikeBo> bikeBoList = new BikesFromNextbike(markers).getBikeBoList();
 		// 3. Insert Bikes to DB
 		logger.info("3. Insert Bikes to DB");
 		long before = System.currentTimeMillis();
@@ -75,16 +72,12 @@ public class InsertBikeFacade {
 			} else {
 				int places = 4;
 
-				double firstLat = new BigDecimal(selectBike.getBikeBoList()
-						.get(0).getLat())
+				double firstLat = new BigDecimal(selectBike.getBikeBoList().get(0).getLat())
 						.setScale(places, RoundingMode.HALF_UP).doubleValue();
-				double secondLat = new BigDecimal(bo.getLat()).setScale(places,
-						RoundingMode.HALF_UP).doubleValue();
-				double firstLng = new BigDecimal(selectBike.getBikeBoList()
-						.get(0).getLng())
+				double secondLat = new BigDecimal(bo.getLat()).setScale(places, RoundingMode.HALF_UP).doubleValue();
+				double firstLng = new BigDecimal(selectBike.getBikeBoList().get(0).getLng())
 						.setScale(places, RoundingMode.HALF_UP).doubleValue();
-				double secondLng = new BigDecimal(bo.getLng()).setScale(places,
-						RoundingMode.HALF_UP).doubleValue();
+				double secondLng = new BigDecimal(bo.getLng()).setScale(places, RoundingMode.HALF_UP).doubleValue();
 
 				boolean isSameLat = firstLat == secondLat;
 				boolean isSameLng = firstLng == secondLng;
@@ -118,10 +111,9 @@ public class InsertBikeFacade {
 		}
 		long after = System.currentTimeMillis();
 		long duration = (after - before) / 1000;
-		String msg = "'" + countInsertedBikes + "' bikes from '" + countBikes
-				+ "' inserted in " + duration + " sec";
+		String msg = "'" + countInsertedBikes + "' bikes from '" + countBikes + "' inserted in " + duration + " sec";
 		logger.info(msg);
-
+		new InsertLastRunToDb(countInsertedBikes);
 		return countInsertedBikes;
 	}
 }
