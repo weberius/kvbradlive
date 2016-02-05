@@ -42,7 +42,7 @@ public class InsertBikeFacade {
 		int countBikes = 0;
 		// 1. AskForNextBikeLife
 		logger.info("1. AskForNextBikeLife");
-		Markers markers = new AskForNextBikeLife().getMarkers();
+		Markers markers = new AskForNextBikeLife().getData();
 		// 2. Get the Bikes
 		logger.info("2. Get the Bikes");
 		List<BikeBo> bikeBoList = new BikesFromNextbike(markers)

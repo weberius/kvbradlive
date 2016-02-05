@@ -7,13 +7,14 @@ import java.net.URL;
 
 import org.apache.log4j.Logger;
 
-import com.fasterxml.jackson.core.JsonParseException;
-import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 
-public class AskForNextBikeLife {
+import de.illilli.opendata.service.AskFor;
+import de.illilli.opendata.service.Config;
 
-	String url = "http://api.nextbike.net/maps/nextbike-live.xml?city=14";
+public class AskForNextBikeLife implements AskFor<Markers> {
+
+	String url = Config.getProperty("api.nextbike.net");
 
 	private static final Logger logger = Logger.getLogger(AskForNextBikeLife.class);
 
@@ -22,15 +23,25 @@ public class AskForNextBikeLife {
 
 	public AskForNextBikeLife() throws MalformedURLException, IOException {
 		inputStream = new URL(url).openStream();
+		mapData();
 	}
 
 	public AskForNextBikeLife(InputStream inputStream) {
 		this.inputStream = inputStream;
+		mapData();
 	}
 
-	public Markers getMarkers() throws JsonParseException, JsonMappingException, IOException {
+	void mapData() {
 		XmlMapper mapper = new XmlMapper();
-		markers = mapper.readValue(inputStream, Markers.class);
+		try {
+			markers = mapper.readValue(inputStream, Markers.class);
+		} catch (IOException e) {
+			logger.error(e);
+		}
+	}
+
+	@Override
+	public Markers getData() {
 		logger.debug(markers.toString());
 		return markers;
 	}
