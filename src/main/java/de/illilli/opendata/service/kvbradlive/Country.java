@@ -37,6 +37,7 @@ public class Country {
 	String country_name;
 	String terms;
 	String website;
+	String policy;
 
 	@JacksonXmlElementWrapper(useWrapping = false)
 	public List<City> getCity() {
@@ -134,6 +135,15 @@ public class Country {
 
 	public void setWebsite(String website) {
 		this.website = website;
+	}
+
+	@XmlAttribute
+	public String getPolicy() {
+		return policy;
+	}
+
+	public void setPolicy(String policy) {
+		this.policy = policy;
 	}
 
 }
