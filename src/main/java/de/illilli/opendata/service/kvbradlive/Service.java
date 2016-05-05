@@ -7,6 +7,7 @@ import java.util.Date;
 import javax.naming.NamingException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
 import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
@@ -266,6 +267,20 @@ public class Service {
 		String msg = inserted + " bikes inserted";
 		logger.info(msg);
 		return msg;
+	}
+
+	/**
+	 * curl -X DELETE http://<server>/kvbradlive/service/delete
+	 * 
+	 * @throws IOException
+	 * @throws NamingException
+	 * @throws SQLException
+	 */
+	@DELETE
+	@Path("/delete")
+	public void deleteOldData() {
+		logger.info("deleteOldData");
+		new DeleteFacade();
 	}
 
 }
