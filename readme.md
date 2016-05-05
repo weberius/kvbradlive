@@ -52,6 +52,19 @@ Folgende REST Endpoints stehen zur Verfügung
 ### /kvbradlive/service/bike/&lt;number&gt;
 ### /kvbradlive/service/allbikeslatestposition/bikeslist
 
+### /kvbradlive/service/put
+
+Mit diesem REST-Endpoint wird das Auslesen der Schnittstelle ausgelöst und ggf. die Werte in die Datenbank eingefügt. Vorgehen:
+
+1. AskForNextBikeLife
+2. Get the Bikes
+3. Insert Bikes to DB;
+   check for existing bike before inserting
+
+### /kvbradlive/service/delete
+
+Mit diesem REST-Endpoint werden die Einträge der letzten 30 Tage gelöscht.
+
 ## Test
 
 ### Tests mit Datenbank
