@@ -12,7 +12,8 @@ import java.util.StringTokenizer;
  * <ul>
  * <li>Informationen von Places; hier können mehrere Fahrräder verzeichnet sein.
  * </li>
- * <li>Informationen von Bikes; hier ist jeweils nur ein Fahrrad verzeichnet.</li>
+ * <li>Informationen von Bikes; hier ist jeweils nur ein Fahrrad verzeichnet.
+ * </li>
  * </ul>
  * 
  * @author wolfram
@@ -37,14 +38,12 @@ public class BikesFromNextbike {
 				for (Place place : placeList) {
 
 					String bike_numbers = place.bike_numbers;
-					if (!"0".equals(place.bikes)) {
-						StringTokenizer bikesSt = new StringTokenizer(
-								bike_numbers, delim);
+					if (bike_numbers != null && !"0".equals(place.bikes)) {
+						StringTokenizer bikesSt = new StringTokenizer(bike_numbers, delim);
 						List<Integer> bikeNumberList = new ArrayList<Integer>();
 
 						while (bikesSt.hasMoreElements()) {
-							int bikeNumber = Integer.parseInt(bikesSt
-									.nextToken());
+							int bikeNumber = Integer.parseInt(bikesSt.nextToken());
 							bikeNumberList.add(bikeNumber);
 							BikeBo bikeBo = new BikeBo();
 							bikeBo.uid = place.uid;
