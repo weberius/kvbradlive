@@ -12,17 +12,33 @@ mvn clean install
 
 Dieser Service unterstellt, dass die Datenbankverbindung per JNDI gesetzt ist. Für den Server bedeutet dies, dass der Container für die Definition der DB-Verbindung zurständig ist. Dafür muss z.B. im Tomcat die Datei context.xml angepasst werden. Folgende Einstellungen müssen eingetragen werden.
 
-    <Resource 
-      name="jdbc/kvbraeder" 
-      auth="Container" 
-      type="javax.sql.DataSource"
-      username="username"
-      password="password"
-      driverClassName="org.postgresql.Driver"
-      url="jdbc:postgresql://server:5432/dbname" 
-      maxTotal="25" 
-      maxIdle="10"
-      validationQuery="select 1" />
+### Connection
+
+context.xml
+
+    <Context>
+        <ResourceLink 
+             name="jdbc/kvbrad" 
+             global="jdbc/kvbrad"
+             type="javax.sql.DataSource" />
+    </Context> 
+
+server.xml
+
+    <GlobalNamingResources>
+        <Resource 
+            name="jdbc/kvbrad"
+            auth="Container"
+            driverClassName="org.postgresql.Driver"
+            maxTotal="25" 
+            maxIdle="10"
+            username="username"
+            password="password"
+            type="javax.sql.DataSource"
+            url="jdbc:postgresql://localhost:5432/kvbrad"
+            validationQuery="select 1"/>
+
+### DB-Tabellen
 
 Zur Zeit wird nur eine Tabelle verwendet; DDL:
 
