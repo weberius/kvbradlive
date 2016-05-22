@@ -25,6 +25,7 @@ public abstract class Delete {
 
 		QueryRunner query = new QueryRunner();
 		updated = query.update(conn, sql, params);
+		conn.commit();
 		conn.close();
 	}
 
