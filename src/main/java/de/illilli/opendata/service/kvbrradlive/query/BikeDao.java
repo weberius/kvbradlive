@@ -10,8 +10,8 @@ public class BikeDao {
 		bikeBo = new BikeBo();
 		bikeBo.setNumber(bikeFromDb.number);
 		bikeBo.setName(bikeFromDb.name);
-		bikeBo.setLng(bikeFromDb.geom.getGeometry().getFirstPoint().getY());
-		bikeBo.setLat(bikeFromDb.geom.getGeometry().getFirstPoint().getX());
+		bikeBo.setLat(bikeFromDb.getLat());
+		bikeBo.setLng(bikeFromDb.getLng());
 		bikeBo.setBike(bikeFromDb.bike);
 		bikeBo.setTimestamp(bikeFromDb.modtime);
 		bikeBo.setUid(bikeFromDb.uid);

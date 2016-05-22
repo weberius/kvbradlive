@@ -1,4 +1,4 @@
-select A.uid, A.name, A.bike, A.number, A.modtime, A.geom 
+select A.uid, A.name, A.bike, A.number, A.modtime, ST_X(A.geom) lat, st_y(A.geom) lng 
 from bike as A 
   inner join (
     select number, max(modtime) as modtime 

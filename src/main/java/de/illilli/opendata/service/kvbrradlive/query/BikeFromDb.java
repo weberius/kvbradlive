@@ -2,8 +2,6 @@ package de.illilli.opendata.service.kvbrradlive.query;
 
 import java.sql.Timestamp;
 
-import org.postgis.PGgeometry;
-
 /**
  * Klasse, die ein Bike repräsentiert. SQL bzw. Postgres-relevante Daten
  * möglich.
@@ -15,7 +13,8 @@ public class BikeFromDb {
 	int bike;
 	int number;
 	Timestamp modtime;
-	PGgeometry geom;
+	double lat;
+	double lng;
 
 	public int getUid() {
 		return uid;
@@ -57,19 +56,20 @@ public class BikeFromDb {
 		this.modtime = modtime;
 	}
 
-	public PGgeometry getGeom() {
-		return geom;
+	public double getLat() {
+		return lat;
 	}
 
-	public void setGeom(PGgeometry geom) {
-		this.geom = geom;
+	public void setLat(double lat) {
+		this.lat = lat;
 	}
 
-	@Override
-	public String toString() {
-		return "BikeFromDb [uid=" + uid + ", name=" + name + ", bike=" + bike
-				+ ", number=" + number + ", modtime=" + modtime + ", geom="
-				+ geom + "]";
+	public double getLng() {
+		return lng;
+	}
+
+	public void setLng(double lng) {
+		this.lng = lng;
 	}
 
 	@Override
@@ -77,7 +77,11 @@ public class BikeFromDb {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + bike;
-		result = prime * result + ((geom == null) ? 0 : geom.hashCode());
+		long temp;
+		temp = Double.doubleToLongBits(lat);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
+		temp = Double.doubleToLongBits(lng);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
 		result = prime * result + ((modtime == null) ? 0 : modtime.hashCode());
 		result = prime * result + ((name == null) ? 0 : name.hashCode());
 		result = prime * result + number;
@@ -96,10 +100,9 @@ public class BikeFromDb {
 		BikeFromDb other = (BikeFromDb) obj;
 		if (bike != other.bike)
 			return false;
-		if (geom == null) {
-			if (other.geom != null)
-				return false;
-		} else if (!geom.equals(other.geom))
+		if (Double.doubleToLongBits(lat) != Double.doubleToLongBits(other.lat))
+			return false;
+		if (Double.doubleToLongBits(lng) != Double.doubleToLongBits(other.lng))
 			return false;
 		if (modtime == null) {
 			if (other.modtime != null)
@@ -116,6 +119,12 @@ public class BikeFromDb {
 		if (uid != other.uid)
 			return false;
 		return true;
+	}
+
+	@Override
+	public String toString() {
+		return "BikeFromDb [uid=" + uid + ", name=" + name + ", bike=" + bike + ", number=" + number + ", modtime="
+				+ modtime + ", lat=" + lat + ", lng=" + lng + "]";
 	}
 
 }

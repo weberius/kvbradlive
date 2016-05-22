@@ -1,2 +1,4 @@
-select uid, name, bike, number, modtime, geom 
-from bike limit 1;
+select 
+  uid, name, bike, number, modtime, ST_X(geom) lat, st_y(geom) lng 
+from 
+  bike limit 1
