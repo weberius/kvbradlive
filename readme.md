@@ -4,15 +4,33 @@ Dieser Service liest den aktuellen Standort der von den Kölner Verkehrsbetriebe
 
 Zum Betrieb ist eine Postgres + Postgis notwendig. Wenn sich die Position eines Rades gegenüber dem letzten Aufruf geändert hat, wird das Ergebnis in die Datenbank geschrieben.
 
-##Installation
+## Installation
 
-mvn clean install
+### Kommandozeile
 
-##Datenbank
+    git clone https://github.com/codeforcologne/kvbradlive.git
+    cd kvbradlive
+    mvn clean install
+
+### eclipse
+
+Für die Entwicklung in eclipse wird das Projekt über 'Import/Check out Maven Project from SCM' in eclipse importiert. Danach kann mit 'mvn clean install' alle Abhängigkeiten aufgelöst werden.
+
+## Datenbank
 
 Dieser Service unterstellt, dass die Datenbankverbindung per JNDI gesetzt ist. Für den Server bedeutet dies, dass der Container für die Definition der DB-Verbindung zurständig ist. Dafür muss z.B. im Tomcat die Datei context.xml angepasst werden. Folgende Einstellungen müssen eingetragen werden.
 
+### Entwicklung
+
+Für die Erreichbarkeit der Datenbank werden zwei Bibliotheken benötigt: 
+- [PostgreSQL JDBC Driver JDBC 4.1](http://mvnrepository.com/artifact/org.postgresql/postgresql/9.3-1100-jdbc41)
+- [Postgis JDBC Driver](http://mvnrepository.com/artifact/net.postgis/postgis-jdbc/2.1.7.2)
+
+Für die Übersetzung der Anwendung werden beide jar-Files mit scope 'provided' eingebunden. Für den Betrieb eines Servers z.B. innerhalb einer Entwicklungsumgebung bedeutet das, dass der entsprechende Server die Bibliotheken kennen muss. Hierfür müssen diese heruntergeladen und im tomcat/lib Verzeichnis abgelegt werden. Dann müssen diese unter 'launch configuration/ Classpath' dem Server bekannt gemacht werden.
+
 ### Connection
+
+Folgende Parameter müssen im Server gesetzt sein, damit die Services die Datenbank erkennen können:
 
 context.xml
 
@@ -85,7 +103,7 @@ Mit diesem REST-Endpoint werden die Einträge der letzten 30 Tage gelöscht.
 
 ### Tests mit Datenbank
 
-Da zur Zeit keine Integration Test Stage zur Verfügung steht, sind alle Tests, die eineDatenbank voraussetzt als main codiert. Um eine Datenbankverbindung hierfür zur Verfügung stellen zu können, muss die Datei src/test/resources/jndi.properties.template in src/test/resources/jndi.properties kopiert und die entsprechenden Parameter zur Datenbank gesetzt werden.
+Da zur Zeit keine Integration Test Stage zur Verfügung steht, sind alle Tests, die eine Datenbank voraussetzt als main codiert. Um eine Datenbankverbindung hierfür zur Verfügung stellen zu können, muss die Datei src/test/resources/jndi.properties.template in src/test/resources/jndi.properties kopiert und die entsprechenden Parameter zur Datenbank gesetzt werden.
 
 ## License
 
