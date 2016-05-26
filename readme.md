@@ -16,6 +16,8 @@ Zum Betrieb ist eine Postgres + Postgis notwendig. Wenn sich die Position eines 
 
 Für die Entwicklung in eclipse wird das Projekt über 'Import/Check out Maven Project from SCM' in eclipse importiert. Danach kann mit 'mvn clean install' alle Abhängigkeiten aufgelöst werden.
 
+Mit 'mvn clean install' werden bereits die Konfigurationsdateien 'config.properties' und 'jndi.properties' mit default-Parametern angelegt. Ggf. müssen hier noch Einträge geändert werden. Nach der Änderung ist ein erneutes Bauen der Anwendung notwendig.
+
 ## Datenbank
 
 Dieser Service unterstellt, dass die Datenbankverbindung per JNDI gesetzt ist. Für den Server bedeutet dies, dass der Container für die Definition der DB-Verbindung zurständig ist. Dafür muss z.B. im Tomcat die Datei context.xml angepasst werden. Folgende Einstellungen müssen eingetragen werden.
@@ -104,6 +106,8 @@ Mit diesem REST-Endpoint werden die Einträge der letzten 30 Tage gelöscht.
 ### Tests mit Datenbank
 
 Da zur Zeit keine Integration Test Stage zur Verfügung steht, sind alle Tests, die eine Datenbank voraussetzt als main codiert. Um eine Datenbankverbindung hierfür zur Verfügung stellen zu können, muss die Datei src/test/resources/jndi.properties.template in src/test/resources/jndi.properties kopiert und die entsprechenden Parameter zur Datenbank gesetzt werden.
+
+Beim ersten auschecken und mit Aufruf von 'mvn clean install' wird die Datei jndi.properties.template in jndi.properties umgesetzt. Vorausgesetzt die Datenbank ist über localhost erreichbar und kennt das Schema 'kvbrad' bzw. den User 'kvbrad/kvbrad' kann direkt mit der Datenbank verbunden werden.
 
 ## License
 
