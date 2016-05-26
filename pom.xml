@@ -30,6 +30,9 @@
 								<copy file="./src/main/resources/config.properties.template"
 									tofile="./src/main/resources/config.properties" overwrite="false"
 									failonerror="false" />
+								<copy file="./src/test/resources/jndi.properties.template"
+									tofile="./src/test/resources/jndi.properties" overwrite="false"
+									failonerror="false" />
 							</target>
 						</configuration>
 						<goals>
