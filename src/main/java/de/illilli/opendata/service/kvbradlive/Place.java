@@ -14,6 +14,7 @@ import javax.xml.bind.annotation.XmlRootElement;
  * 		number="4826" 
  * 		bikes="4" 
  * 		terminal_type="free"
+ *      bike_types="{"15":1}"
  * 		bike_numbers="21640,21371,21336,21507" />
  * </pre>
  *
@@ -45,6 +46,10 @@ public class Place {
 	int bike;
 	String bike_racks;
 	String maintenance;
+	/**
+	 * new value; e.g. {"15":1}
+	 */
+	String bike_types;
 
 	@XmlAttribute
 	public String getMaintenance() {
@@ -153,14 +158,20 @@ public class Place {
 		this.bike_numbers = bike_numbers;
 	}
 
+	@XmlAttribute
+	public String getBike_types() {
+		return bike_types;
+	}
+
+	public void setBike_types(String bike_types) {
+		this.bike_types = bike_types;
+	}
+
 	@Override
 	public String toString() {
-		return "Place [uid=" + uid + ", lat=" + lat + ", lng=" + lng
-				+ ", name=" + name + ", spot=" + spot + ", number=" + number
-				+ ", bikes=" + bikes + ", terminal_type=" + terminal_type
-				+ ", bike_numbers=" + bike_numbers + ", bike=" + bike
-				+ ", bike_racks=" + bike_racks + ", maintenance=" + maintenance
-				+ "]";
+		return "Place [uid=" + uid + ", lat=" + lat + ", lng=" + lng + ", name=" + name + ", spot=" + spot + ", number="
+				+ number + ", bikes=" + bikes + ", terminal_type=" + terminal_type + ", bike_numbers=" + bike_numbers
+				+ ", bike=" + bike + ", bike_racks=" + bike_racks + ", maintenance=" + maintenance + "]";
 	}
 
 	@Override
@@ -168,23 +179,19 @@ public class Place {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + bike;
-		result = prime * result
-				+ ((bike_numbers == null) ? 0 : bike_numbers.hashCode());
-		result = prime * result
-				+ ((bike_racks == null) ? 0 : bike_racks.hashCode());
+		result = prime * result + ((bike_numbers == null) ? 0 : bike_numbers.hashCode());
+		result = prime * result + ((bike_racks == null) ? 0 : bike_racks.hashCode());
 		result = prime * result + ((bikes == null) ? 0 : bikes.hashCode());
 		long temp;
 		temp = Double.doubleToLongBits(lat);
 		result = prime * result + (int) (temp ^ (temp >>> 32));
 		temp = Double.doubleToLongBits(lng);
 		result = prime * result + (int) (temp ^ (temp >>> 32));
-		result = prime * result
-				+ ((maintenance == null) ? 0 : maintenance.hashCode());
+		result = prime * result + ((maintenance == null) ? 0 : maintenance.hashCode());
 		result = prime * result + ((name == null) ? 0 : name.hashCode());
 		result = prime * result + number;
 		result = prime * result + spot;
-		result = prime * result
-				+ ((terminal_type == null) ? 0 : terminal_type.hashCode());
+		result = prime * result + ((terminal_type == null) ? 0 : terminal_type.hashCode());
 		result = prime * result + uid;
 		return result;
 	}
