@@ -21,7 +21,7 @@ public class AskForNextBikeLifeTest {
 
 	@Test
 	public void testGetMarkers() throws JsonParseException, JsonMappingException, IOException {
-		InputStream inputStream = this.getClass().getResourceAsStream("/nextbike-live-20160817.xml");
+		InputStream inputStream = this.getClass().getResourceAsStream("/nextbike-live-20160907.xml");
 		Markers markers = new AskForNextBikeLife(inputStream).getData();
 		int actual = markers.country.size();
 		int expected = 1;
