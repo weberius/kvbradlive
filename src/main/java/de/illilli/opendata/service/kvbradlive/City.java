@@ -31,6 +31,36 @@ public class City {
 	String alias;
 	int _break;
 	String name;
+	int num_places;
+	int refresh_rate;
+	String bounds;
+
+	@XmlAttribute
+	public String getBounds() {
+		return bounds;
+	}
+
+	public void setBounds(String bounds) {
+		this.bounds = bounds;
+	}
+
+	@XmlAttribute
+	public int getRefresh_rate() {
+		return refresh_rate;
+	}
+
+	public void setRefresh_rate(int refresh_rate) {
+		this.refresh_rate = refresh_rate;
+	}
+
+	@XmlAttribute
+	public int getNum_places() {
+		return num_places;
+	}
+
+	public void setNum_places(int num_places) {
+		this.num_places = num_places;
+	}
 
 	@JacksonXmlElementWrapper(useWrapping = false)
 	public List<Place> getPlace() {
@@ -115,10 +145,8 @@ public class City {
 
 	@Override
 	public String toString() {
-		return "City [place=" + place + ", uid=" + uid + ", lat=" + lat
-				+ ", lng=" + lng + ", zoom=" + zoom + ", maps_icon="
-				+ maps_icon + ", alias=" + alias + ", _break=" + _break
-				+ ", name=" + name + "]";
+		return "City [place=" + place + ", uid=" + uid + ", lat=" + lat + ", lng=" + lng + ", zoom=" + zoom
+				+ ", maps_icon=" + maps_icon + ", alias=" + alias + ", _break=" + _break + ", name=" + name + "]";
 	}
 
 	@Override
@@ -132,8 +160,7 @@ public class City {
 		result = prime * result + (int) (temp ^ (temp >>> 32));
 		temp = Double.doubleToLongBits(lng);
 		result = prime * result + (int) (temp ^ (temp >>> 32));
-		result = prime * result
-				+ ((maps_icon == null) ? 0 : maps_icon.hashCode());
+		result = prime * result + ((maps_icon == null) ? 0 : maps_icon.hashCode());
 		result = prime * result + ((name == null) ? 0 : name.hashCode());
 		result = prime * result + ((place == null) ? 0 : place.hashCode());
 		result = prime * result + uid;
