@@ -38,6 +38,8 @@ public class Country {
 	String terms;
 	String website;
 	String policy;
+	int show_bike_types;
+	int show_free_racks;
 
 	@JacksonXmlElementWrapper(useWrapping = false)
 	public List<City> getCity() {
@@ -144,6 +146,123 @@ public class Country {
 
 	public void setPolicy(String policy) {
 		this.policy = policy;
+	}
+
+	@XmlAttribute
+	public int getShow_bike_types() {
+		return show_bike_types;
+	}
+
+	public void setShow_bike_types(int show_bike_types) {
+		this.show_bike_types = show_bike_types;
+	}
+
+	@XmlAttribute
+	public int getShow_free_racks() {
+		return show_free_racks;
+	}
+
+	public void setShow_free_racks(int show_free_racks) {
+		this.show_free_racks = show_free_racks;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((city == null) ? 0 : city.hashCode());
+		result = prime * result + ((country == null) ? 0 : country.hashCode());
+		result = prime * result + ((country_name == null) ? 0 : country_name.hashCode());
+		result = prime * result + ((domain == null) ? 0 : domain.hashCode());
+		result = prime * result + ((hotline == null) ? 0 : hotline.hashCode());
+		long temp;
+		temp = Double.doubleToLongBits(lat);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
+		temp = Double.doubleToLongBits(lng);
+		result = prime * result + (int) (temp ^ (temp >>> 32));
+		result = prime * result + ((name == null) ? 0 : name.hashCode());
+		result = prime * result + ((policy == null) ? 0 : policy.hashCode());
+		result = prime * result + show_bike_types;
+		result = prime * result + show_free_racks;
+		result = prime * result + ((terms == null) ? 0 : terms.hashCode());
+		result = prime * result + ((website == null) ? 0 : website.hashCode());
+		result = prime * result + zoom;
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Country other = (Country) obj;
+		if (city == null) {
+			if (other.city != null)
+				return false;
+		} else if (!city.equals(other.city))
+			return false;
+		if (country == null) {
+			if (other.country != null)
+				return false;
+		} else if (!country.equals(other.country))
+			return false;
+		if (country_name == null) {
+			if (other.country_name != null)
+				return false;
+		} else if (!country_name.equals(other.country_name))
+			return false;
+		if (domain == null) {
+			if (other.domain != null)
+				return false;
+		} else if (!domain.equals(other.domain))
+			return false;
+		if (hotline == null) {
+			if (other.hotline != null)
+				return false;
+		} else if (!hotline.equals(other.hotline))
+			return false;
+		if (Double.doubleToLongBits(lat) != Double.doubleToLongBits(other.lat))
+			return false;
+		if (Double.doubleToLongBits(lng) != Double.doubleToLongBits(other.lng))
+			return false;
+		if (name == null) {
+			if (other.name != null)
+				return false;
+		} else if (!name.equals(other.name))
+			return false;
+		if (policy == null) {
+			if (other.policy != null)
+				return false;
+		} else if (!policy.equals(other.policy))
+			return false;
+		if (show_bike_types != other.show_bike_types)
+			return false;
+		if (show_free_racks != other.show_free_racks)
+			return false;
+		if (terms == null) {
+			if (other.terms != null)
+				return false;
+		} else if (!terms.equals(other.terms))
+			return false;
+		if (website == null) {
+			if (other.website != null)
+				return false;
+		} else if (!website.equals(other.website))
+			return false;
+		if (zoom != other.zoom)
+			return false;
+		return true;
+	}
+
+	@Override
+	public String toString() {
+		return "Country [city=" + city + ", lat=" + lat + ", lng=" + lng + ", zoom=" + zoom + ", name=" + name
+				+ ", hotline=" + hotline + ", domain=" + domain + ", country=" + country + ", country_name="
+				+ country_name + ", terms=" + terms + ", website=" + website + ", policy=" + policy
+				+ ", show_bike_types=" + show_bike_types + ", show_free_racks=" + show_free_racks + "]";
 	}
 
 }
