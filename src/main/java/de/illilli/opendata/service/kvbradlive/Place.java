@@ -45,11 +45,22 @@ public class Place {
 	String bike_numbers;
 	int bike;
 	String bike_racks;
+	String free_racks;
 	String maintenance;
 	/**
 	 * new value; e.g. {"15":1}
 	 */
 	String bike_types;
+	String address;
+
+	@XmlAttribute
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
 
 	@XmlAttribute
 	public String getMaintenance() {
@@ -58,6 +69,15 @@ public class Place {
 
 	public void setMaintenance(String maintenance) {
 		this.maintenance = maintenance;
+	}
+
+	@XmlAttribute
+	public String getFree_racks() {
+		return free_racks;
+	}
+
+	public void setFree_racks(String free_racks) {
+		this.free_racks = free_racks;
 	}
 
 	@XmlAttribute
