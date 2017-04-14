@@ -40,6 +40,9 @@ public class Country {
 	String policy;
 	int show_bike_types;
 	int show_free_racks;
+	int booked_bikes;
+	int set_point_bikes;
+	int available_bikes;
 
 	@JacksonXmlElementWrapper(useWrapping = false)
 	public List<City> getCity() {
@@ -166,10 +169,39 @@ public class Country {
 		this.show_free_racks = show_free_racks;
 	}
 
+	@XmlAttribute
+	public int getBooked_bikes() {
+		return booked_bikes;
+	}
+
+	public void setBooked_bikes(int booked_bikes) {
+		this.booked_bikes = booked_bikes;
+	}
+
+	@XmlAttribute
+	public int getSet_point_bikes() {
+		return set_point_bikes;
+	}
+
+	public void setSet_point_bikes(int set_point_bikes) {
+		this.set_point_bikes = set_point_bikes;
+	}
+
+	@XmlAttribute
+	public int getAvailable_bikes() {
+		return available_bikes;
+	}
+
+	public void setAvailable_bikes(int available_bikes) {
+		this.available_bikes = available_bikes;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
+		result = prime * result + available_bikes;
+		result = prime * result + booked_bikes;
 		result = prime * result + ((city == null) ? 0 : city.hashCode());
 		result = prime * result + ((country == null) ? 0 : country.hashCode());
 		result = prime * result + ((country_name == null) ? 0 : country_name.hashCode());
@@ -182,6 +214,7 @@ public class Country {
 		result = prime * result + (int) (temp ^ (temp >>> 32));
 		result = prime * result + ((name == null) ? 0 : name.hashCode());
 		result = prime * result + ((policy == null) ? 0 : policy.hashCode());
+		result = prime * result + set_point_bikes;
 		result = prime * result + show_bike_types;
 		result = prime * result + show_free_racks;
 		result = prime * result + ((terms == null) ? 0 : terms.hashCode());
@@ -199,6 +232,10 @@ public class Country {
 		if (getClass() != obj.getClass())
 			return false;
 		Country other = (Country) obj;
+		if (available_bikes != other.available_bikes)
+			return false;
+		if (booked_bikes != other.booked_bikes)
+			return false;
 		if (city == null) {
 			if (other.city != null)
 				return false;
@@ -238,6 +275,8 @@ public class Country {
 				return false;
 		} else if (!policy.equals(other.policy))
 			return false;
+		if (set_point_bikes != other.set_point_bikes)
+			return false;
 		if (show_bike_types != other.show_bike_types)
 			return false;
 		if (show_free_racks != other.show_free_racks)
@@ -262,7 +301,8 @@ public class Country {
 		return "Country [city=" + city + ", lat=" + lat + ", lng=" + lng + ", zoom=" + zoom + ", name=" + name
 				+ ", hotline=" + hotline + ", domain=" + domain + ", country=" + country + ", country_name="
 				+ country_name + ", terms=" + terms + ", website=" + website + ", policy=" + policy
-				+ ", show_bike_types=" + show_bike_types + ", show_free_racks=" + show_free_racks + "]";
+				+ ", show_bike_types=" + show_bike_types + ", show_free_racks=" + show_free_racks + ", booked_bikes="
+				+ booked_bikes + ", set_point_bikes=" + set_point_bikes + ", available_bikes=" + available_bikes + "]";
 	}
 
 }

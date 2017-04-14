@@ -34,6 +34,9 @@ public class City {
 	int num_places;
 	int refresh_rate;
 	String bounds;
+	int booked_bikes;
+	int set_point_bikes;
+	int available_bikes;
 
 	@XmlAttribute
 	public String getBounds() {
@@ -143,10 +146,31 @@ public class City {
 		this.name = name;
 	}
 
-	@Override
-	public String toString() {
-		return "City [place=" + place + ", uid=" + uid + ", lat=" + lat + ", lng=" + lng + ", zoom=" + zoom
-				+ ", maps_icon=" + maps_icon + ", alias=" + alias + ", _break=" + _break + ", name=" + name + "]";
+	@XmlAttribute
+	public int getBooked_bikes() {
+		return booked_bikes;
+	}
+
+	public void setBooked_bikes(int booked_bikes) {
+		this.booked_bikes = booked_bikes;
+	}
+
+	@XmlAttribute
+	public int getSet_point_bikes() {
+		return set_point_bikes;
+	}
+
+	public void setSet_point_bikes(int set_point_bikes) {
+		this.set_point_bikes = set_point_bikes;
+	}
+
+	@XmlAttribute
+	public int getAvailable_bikes() {
+		return available_bikes;
+	}
+
+	public void setAvailable_bikes(int available_bikes) {
+		this.available_bikes = available_bikes;
 	}
 
 	@Override
@@ -155,6 +179,9 @@ public class City {
 		int result = 1;
 		result = prime * result + _break;
 		result = prime * result + ((alias == null) ? 0 : alias.hashCode());
+		result = prime * result + available_bikes;
+		result = prime * result + booked_bikes;
+		result = prime * result + ((bounds == null) ? 0 : bounds.hashCode());
 		long temp;
 		temp = Double.doubleToLongBits(lat);
 		result = prime * result + (int) (temp ^ (temp >>> 32));
@@ -162,7 +189,10 @@ public class City {
 		result = prime * result + (int) (temp ^ (temp >>> 32));
 		result = prime * result + ((maps_icon == null) ? 0 : maps_icon.hashCode());
 		result = prime * result + ((name == null) ? 0 : name.hashCode());
+		result = prime * result + num_places;
 		result = prime * result + ((place == null) ? 0 : place.hashCode());
+		result = prime * result + refresh_rate;
+		result = prime * result + set_point_bikes;
 		result = prime * result + uid;
 		result = prime * result + zoom;
 		return result;
@@ -184,6 +214,15 @@ public class City {
 				return false;
 		} else if (!alias.equals(other.alias))
 			return false;
+		if (available_bikes != other.available_bikes)
+			return false;
+		if (booked_bikes != other.booked_bikes)
+			return false;
+		if (bounds == null) {
+			if (other.bounds != null)
+				return false;
+		} else if (!bounds.equals(other.bounds))
+			return false;
 		if (Double.doubleToLongBits(lat) != Double.doubleToLongBits(other.lat))
 			return false;
 		if (Double.doubleToLongBits(lng) != Double.doubleToLongBits(other.lng))
@@ -198,16 +237,31 @@ public class City {
 				return false;
 		} else if (!name.equals(other.name))
 			return false;
+		if (num_places != other.num_places)
+			return false;
 		if (place == null) {
 			if (other.place != null)
 				return false;
 		} else if (!place.equals(other.place))
+			return false;
+		if (refresh_rate != other.refresh_rate)
+			return false;
+		if (set_point_bikes != other.set_point_bikes)
 			return false;
 		if (uid != other.uid)
 			return false;
 		if (zoom != other.zoom)
 			return false;
 		return true;
+	}
+
+	@Override
+	public String toString() {
+		return "City [place=" + place + ", uid=" + uid + ", lat=" + lat + ", lng=" + lng + ", zoom=" + zoom
+				+ ", maps_icon=" + maps_icon + ", alias=" + alias + ", _break=" + _break + ", name=" + name
+				+ ", num_places=" + num_places + ", refresh_rate=" + refresh_rate + ", bounds=" + bounds
+				+ ", booked_bikes=" + booked_bikes + ", set_point_bikes=" + set_point_bikes + ", available_bikes="
+				+ available_bikes + "]";
 	}
 
 }
