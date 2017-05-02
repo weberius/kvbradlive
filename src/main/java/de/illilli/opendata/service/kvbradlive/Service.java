@@ -191,7 +191,7 @@ public class Service {
 	/**
 	 * <p>
 	 * Beispiel:
-	 * <a href= "http://localhost:8080/kvbradlive/service/bike/21002" >
+	 * <a href= "http://localhost:8080/kvbradlive/service/bike/22336" >
 	 * /kvbradlive/service/bike/&lt;number&gt;</a>
 	 * </p>
 	 * 
@@ -217,9 +217,16 @@ public class Service {
 
 	/**
 	 * <p>
-	 * Beispiel: <a href=
+	 * Beispiele:
+	 * <ul>
+	 * <li><a href=
 	 * "http://localhost:8080/kvbradlive/service/allbikeslatestposition/bikeslist"
-	 * > /kvbradlive/service/allbikeslatestposition/bikeslist</a>
+	 * >/kvbradlive/service/allbikeslatestposition/bikeslist</a></li>
+	 * <li><a href=
+	 * "http://localhost:8080/kvbradlive/service/allbikeslatestposition/bikeslist?bbox=50.940692,6.951216,50.931568,6.977266"
+	 * >/kvbradlive/service/allbikeslatestposition/bikeslist?bbox={lat,lng,lat,
+	 * lng}</a></li>
+	 * <ul>
 	 * </p>
 	 * 
 	 * @param modtime
@@ -237,7 +244,13 @@ public class Service {
 			throws JsonParseException, JsonMappingException, IOException, SQLException, NamingException {
 		request.setCharacterEncoding("UTF-8");
 		response.setCharacterEncoding("UTF-8");
-		Facade facade = new BikesListFacade(new SelectLastPositionsOfBikes());
+		String bbox = request.getParameter("bbox");
+		Facade facade = null;
+		if (bbox != null && bbox.length() > 0) {
+			facade = new BikesListFacade(new SelectLastPositionsOfBikes(bbox));
+		} else {
+			facade = new BikesListFacade(new SelectLastPositionsOfBikes());
+		}
 		return facade.getJson();
 	}
 

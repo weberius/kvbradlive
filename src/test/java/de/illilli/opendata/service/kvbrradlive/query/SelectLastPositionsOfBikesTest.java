@@ -25,6 +25,13 @@ public class SelectLastPositionsOfBikesTest {
 		List<BikeBo> bikeBoList = select.getBikeBoList();
 
 		System.out.println(bikeBoList);
+
+		String bbox = "50.940692,6.951216,50.931568,6.977266";
+		select = new SelectLastPositionsOfBikes(bbox);
+		bikeBoList = select.getBikeBoList();
+
+		System.out.println(bikeBoList);
+
 	}
 
 }
