@@ -56,7 +56,6 @@ public class BikesFromNextbike {
 								bikeNumberList.add(bikeNumber);
 								BikeBo bikeBo = new BikeBo();
 								bikeBo.uid = place.uid;
-								bikeBo.bike = place.bike;
 								bikeBo.name = place.name;
 								bikeBo.number = bikeNumber;
 								bikeBo.lat = place.lat;
