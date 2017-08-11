@@ -1,7 +1,13 @@
 package de.illilli.opendata.service.kvbradlive;
 
+import java.util.List;
+
 import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
 
 /**
  * <pre>
@@ -19,9 +25,11 @@ import javax.xml.bind.annotation.XmlRootElement;
  * </pre>
  *
  */
+@JsonIgnoreProperties(ignoreUnknown = true)
 @XmlRootElement(name = "place")
 public class Place {
 
+	List<Bike> bikeList;
 	int uid;
 	double lat;
 	double lng;
@@ -43,7 +51,6 @@ public class Place {
 	String bikes;
 	String terminal_type;
 	String bike_numbers;
-	int bike;
 	String bike_racks;
 	String free_racks;
 	String maintenance;
@@ -52,6 +59,16 @@ public class Place {
 	 */
 	String bike_types;
 	String address;
+
+	@XmlElement(name = "bike")
+	@JacksonXmlElementWrapper(useWrapping = false)
+	public List<Bike> getBikeList() {
+		return bikeList;
+	}
+
+	public void setBikeList(List<Bike> bikeList) {
+		this.bikeList = bikeList;
+	}
 
 	@XmlAttribute
 	public String getAddress() {
@@ -87,15 +104,6 @@ public class Place {
 
 	public void setBike_racks(String bike_racks) {
 		this.bike_racks = bike_racks;
-	}
-
-	@XmlAttribute
-	public int getBike() {
-		return bike;
-	}
-
-	public void setBike(int bike) {
-		this.bike = bike;
 	}
 
 	@XmlAttribute
@@ -188,20 +196,16 @@ public class Place {
 	}
 
 	@Override
-	public String toString() {
-		return "Place [uid=" + uid + ", lat=" + lat + ", lng=" + lng + ", name=" + name + ", spot=" + spot + ", number="
-				+ number + ", bikes=" + bikes + ", terminal_type=" + terminal_type + ", bike_numbers=" + bike_numbers
-				+ ", bike=" + bike + ", bike_racks=" + bike_racks + ", maintenance=" + maintenance + "]";
-	}
-
-	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + bike;
+		result = prime * result + ((address == null) ? 0 : address.hashCode());
+		result = prime * result + ((bikeList == null) ? 0 : bikeList.hashCode());
 		result = prime * result + ((bike_numbers == null) ? 0 : bike_numbers.hashCode());
 		result = prime * result + ((bike_racks == null) ? 0 : bike_racks.hashCode());
+		result = prime * result + ((bike_types == null) ? 0 : bike_types.hashCode());
 		result = prime * result + ((bikes == null) ? 0 : bikes.hashCode());
+		result = prime * result + ((free_racks == null) ? 0 : free_racks.hashCode());
 		long temp;
 		temp = Double.doubleToLongBits(lat);
 		result = prime * result + (int) (temp ^ (temp >>> 32));
@@ -225,7 +229,15 @@ public class Place {
 		if (getClass() != obj.getClass())
 			return false;
 		Place other = (Place) obj;
-		if (bike != other.bike)
+		if (address == null) {
+			if (other.address != null)
+				return false;
+		} else if (!address.equals(other.address))
+			return false;
+		if (bikeList == null) {
+			if (other.bikeList != null)
+				return false;
+		} else if (!bikeList.equals(other.bikeList))
 			return false;
 		if (bike_numbers == null) {
 			if (other.bike_numbers != null)
@@ -237,10 +249,20 @@ public class Place {
 				return false;
 		} else if (!bike_racks.equals(other.bike_racks))
 			return false;
+		if (bike_types == null) {
+			if (other.bike_types != null)
+				return false;
+		} else if (!bike_types.equals(other.bike_types))
+			return false;
 		if (bikes == null) {
 			if (other.bikes != null)
 				return false;
 		} else if (!bikes.equals(other.bikes))
+			return false;
+		if (free_racks == null) {
+			if (other.free_racks != null)
+				return false;
+		} else if (!free_racks.equals(other.free_racks))
 			return false;
 		if (Double.doubleToLongBits(lat) != Double.doubleToLongBits(other.lat))
 			return false;
@@ -268,6 +290,14 @@ public class Place {
 		if (uid != other.uid)
 			return false;
 		return true;
+	}
+
+	@Override
+	public String toString() {
+		return "Place [bikeList=" + bikeList + ", uid=" + uid + ", lat=" + lat + ", lng=" + lng + ", name=" + name
+				+ ", spot=" + spot + ", number=" + number + ", bikes=" + bikes + ", terminal_type=" + terminal_type
+				+ ", bike_numbers=" + bike_numbers + ", bike_racks=" + bike_racks + ", free_racks=" + free_racks
+				+ ", maintenance=" + maintenance + ", bike_types=" + bike_types + ", address=" + address + "]";
 	}
 
 }
